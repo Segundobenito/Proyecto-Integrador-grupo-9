@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: yellow;
+}
+h1 {
+    font-size: 45px;
+    font-style: italic;
+}
+h2 {
+    font-size: 30px;
+    font-style: oblique;
+}
+h3{
+    font-size: 20px;
+    font-style: oblique;
+}

@@ -1,0 +1,21 @@
+li{
+    float: left;
+    list-style: none;
+    padding: 10px;
+}
+nav{
+    float: right;
+    margin-top: 60px;
+    margin-right: 200px;
+}
+a{
+    text-decoration: none;
+    font-style: oblique;
+    color: yellow;
+}
+li:hover a{
+    color: white;
+}
+header{
+    background-color: black;
+}
