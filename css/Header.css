@@ -1,9 +1,9 @@
-li{
+header li{
     float: left;
     list-style: none;
     padding: 10px;
 }
-nav{
+header nav{
     float: right;
     margin-top: 60px;
     margin-right: 200px;
