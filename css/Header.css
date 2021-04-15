@@ -38,13 +38,9 @@ li:hover a{
 }
 footer{
     position: absolute;
-    bottom: 0;
     background-color: black;
     height: auto;
-    width: 100;
-    left: 0;
-    height: auto;
-    
+    width: 100vw;
     padding-top: 40px;
     color: yellow;
 }
@@ -54,4 +50,9 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+footer li{
+    float: left;
+    list-style: none;
+    padding: 10px;
 }
