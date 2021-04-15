@@ -1,8 +1,4 @@
-header li{
-    float: left;
-    list-style: none;
-    padding: 10px;
-}
+
 header nav{
     float: right;
     margin-top: 60px;
@@ -24,6 +20,11 @@ a{
     text-decoration: none;
     font-style: oblique;
     color: yellow;
+}
+header li{
+    float: left;
+    list-style: none;
+    padding: 10px;
 }
 li:hover a{
     color: white;
