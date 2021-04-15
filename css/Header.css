@@ -1,23 +1,33 @@
-li{
-    float: left;
-    list-style: none;
-    padding: 10px;
-}
-nav{
+
+header nav{
     float: right;
     margin-top: 60px;
     margin-right: 200px;
 }
-a{
+header a{
     text-decoration: none;
     font-style: oblique;
     color: yellow;
 }
-li:hover a{
+header li:hover a{
     color: white;
 }
 header{
     background-color: black;
+}
+a{
+    font-size: 30px;
+    text-decoration: none;
+    font-style: oblique;
+    color: yellow;
+}
+header li{
+    float: left;
+    list-style: none;
+    padding: 10px;
+}
+li:hover a{
+    color: white;
 }
 footer{
     position: absolute;
