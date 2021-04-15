@@ -8,16 +8,25 @@ header nav{
     margin-top: 60px;
     margin-right: 200px;
 }
+header a{
+    text-decoration: none;
+    font-style: oblique;
+    color: yellow;
+}
+header li:hover a{
+    color: white;
+}
+header{
+    background-color: black;
+}
 a{
+    font-size: 30px;
     text-decoration: none;
     font-style: oblique;
     color: yellow;
 }
 li:hover a{
     color: white;
-}
-header{
-    background-color: black;
 }
 footer{
     position: absolute;
