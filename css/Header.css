@@ -19,3 +19,22 @@ li:hover a{
 header{
     background-color: black;
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    height: auto;
+    width: 100;
+    left: 0;
+    height: auto;
+    
+    padding-top: 40px;
+    color: yellow;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
