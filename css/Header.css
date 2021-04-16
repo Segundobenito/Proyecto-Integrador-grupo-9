@@ -5,7 +5,6 @@ header nav{
     margin-right: 200px;
 }
 a{
-    font-size: 30px;
     text-decoration: none;
     font-style: oblique;
     color: yellow;
@@ -21,12 +20,6 @@ header li:hover a{
 }
 header{
     background-color: black;
-}
-a{
-    font-size: 30px;
-    text-decoration: none;
-    font-style: oblique;
-    color: yellow;
 }
 header li{
     float: left;
@@ -56,3 +49,4 @@ footer li{
     list-style: none;
     padding: 10px;
 }
+
