@@ -1,19 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 body {
     background-color: black;
     color: yellow;
 }
+
 h1 {
     font-size: 45px;
     font-style: italic;
 }
+
 h2 {
     font-size: 30px;
     font-style: oblique;
 }
+
 h3 {
     font-size: 20px;
     font-style: oblique;
 }
+
 li {
     list-style: none;
+}
+
+
+* {
+    background-color: #131314;
+    color: yellow;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+.edits li a {
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.edits li a:hover{
+    color: #0088a9;
+}
+
+
+
+header nav {
+    float: right;
+    margin-top: 60px;
+    margin-right: 200px;
+}
+
+
+a {
+    text-decoration: none;
+    font-style: oblique;
+    color: yellow;
+
+}
+
+.logo {
+    cursor: pointer;
+
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(151, 149, 43);
+}
+
+
+
+header a {
+    font-size: 40px;
+    text-decoration: none;
+    font-style: oblique;
+    color: yellow;
+}
+
+header li:hover a {
+    color: white;
+}
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 2%
+}
+
+
+header li {
+    float: left;
+    list-style: none;
+    padding: 10px;
+}
+
+
+li:hover a {
+    color: white;
+}
+
+
+footer {
+    position: absolute;
+
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: yellow;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer li {
+    float: left;
+    list-style: none;
+    padding: 10px;
 }
