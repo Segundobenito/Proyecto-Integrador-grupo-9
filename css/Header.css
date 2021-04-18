@@ -1,52 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
-header nav{
+* {
+    background-color: #131314;
+    color: yellow;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+header nav {
     float: right;
     margin-top: 60px;
     margin-right: 200px;
 }
-a{
+
+
+a {
     text-decoration: none;
     font-style: oblique;
     color: yellow;
+
 }
-header a{
+
+.logo {
+    cursor: pointer;
+
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+
+
+header a {
     font-size: 40px;
     text-decoration: none;
     font-style: oblique;
     color: yellow;
 }
-header li:hover a{
+
+header li:hover a {
     color: white;
 }
-header{
-    background-color: black;
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 2%
 }
-header li{
+
+
+header li {
     float: left;
     list-style: none;
     padding: 10px;
 }
-li:hover a{
+
+
+li:hover a {
     color: white;
 }
-footer{
+
+
+footer {
     position: absolute;
-    background-color: black;
+
     height: auto;
     width: 100vw;
     padding-top: 40px;
     color: yellow;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-footer li{
+
+footer li {
     float: left;
     list-style: none;
     padding: 10px;
 }
-
