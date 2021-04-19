@@ -1,28 +1,103 @@
 /*<meta name="viewport" content="width=device-width, initial-scale=1.0">*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 * {
     box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
 }
 
+
+main a:hover {
+    color: #0088a9;
+}
 .contenedor{
     display: flex;
-    background-color: blue;
-    padding: 10px;
+    background-color: black;
+    color: yellow;
+    width: 100%;
     flex-flow: row wrap;
 }
-
-/*header {
-    background: black;
+header {
+    background-color: #131314;
     width: 100%;
     padding: 20px;
-
-    /*flex*/
-    /*display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
 }
-.contenedor_art{
-    width: 90%;
+.main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.titulo_pagina {   
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    background-color: #383830;
+}
+.titulo_pagina h1{
+    margin: auto;
+    
+}
+.sections{ 
+    display: flex;
+    flex-flow: row wrap;
+}
+.section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 70px;
+    background-color: #383830;
+}
+article {
+    width: 100%;
+    height: auto;
+}
+article.nombre_artista {
+    text-align: center;
+    font-size: 40px;
+    height: auto;
+}
+.nombre_artista h2{
+    margin: auto;
+}
+.imagen{
+    width: 40%;
+    text-align: center;
+}
+.imagen img{
+    width: 100%;
+    border-radius: 100%;
+}
+.artist{
+    display: flex;
+    flex-flow: row wrap;
+}
+.textos {
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+    justify-content: center;
+}
+.top {
+    font-size: 40px;
+    margin-left: 10px;
+    text-align: center;
+    margin: 0;
+}
+.top h3{
+    margin: 0;
+}
+.lista_top{
+    font-size: 25px;
+    margin-left: 50px;
 }
 
 /* Para que se modifique en pantalla de Desktop*/
