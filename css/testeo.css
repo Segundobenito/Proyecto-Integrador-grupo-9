@@ -1,0 +1,29 @@
+/*<meta name="viewport" content="width=device-width, initial-scale=1.0">*/
+* {
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: flex;
+    background-color: blue;
+    padding: 10px;
+    flex-flow: row wrap;
+}
+
+/*header {
+    background: black;
+    width: 100%;
+    padding: 20px;
+
+    /*flex*/
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.contenedor_art{
+    width: 90%;
+}
+
+/* Para que se modifique en pantalla de Desktop*/
+/*@media (min-width: 1024px)*/

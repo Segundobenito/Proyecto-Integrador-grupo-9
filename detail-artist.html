@@ -4,136 +4,141 @@
         <meta charset="utf-8">
         <title>Detalle Artista</title> 
         <link rel="stylesheet" href="css/details.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
+    
     <body>
-        <header>
-            <link rel="stylesheet" href="../Proyecto-Integrador-grupo-9/css/Header.css">
-            <img src="../Fotos/Logo.png" alt="logo">
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="generes.html">Generes</a></li>
-                    <li><a href="playlist.html">Playlist</a></li>
-                    <li>
-                        <form action="search-results.html" method="GET">
-                            <p>
-                                <input type="search" name="Buscar" placeholder="Artista, Cancion, Album...">
-                                <input type="submit" value="Buscar">
-                            </p>
-                        </form>
-                    </li>
+        <div class="contenedor">
+            <header>
+                <link rel="stylesheet" href="../Proyecto-Integrador-grupo-9/css/Header.css">
+                <img src="../Fotos/Logo.png" alt="logo">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="generes.html">Generes</a></li>
+                        <li><a href="playlist.html">Playlist</a></li>
+                        <li>
+                            <form action="search-results.html" method="GET">
+                                <p>
+                                    <input type="search" name="Buscar" placeholder="Artista, Cancion, Album...">
+                                    <input type="submit" value="Buscar">
+                                </p>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="cta" href="#"><button>Contact</button></a>
+            </header>
+            <main>
+                <div class="contenedor" id="cont_artist">
+                    <section class="titulo pagina">
+                        <h1>Detalles de Artistas</h1>
+                    </section>
+                        
+                    <div class="sections" id="sections_artist">
+
+                        <section>
+                            <h2 id="bob">Bob Marley</h2>
+                            <article class="artist">
+                                <figure><img src="../Fotos/bob.jpg" alt="foto Bob Marley"></figure>
+                                <div class="textos">
+                                    <h3>Top 5 Canciones:</h3>
+                                    <ul>                    
+                                        <li>Three Little Birds</li>
+                                        <li>Is This Love</li>
+                                        <li>Could You Be Loved</li>
+                                        <li>Buffalo Soldier</li>
+                                        <li><a href="detail-track.html">Jamming</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </section>
+
+                        <section> 
+                            <h2 id="metalica">Metalica</h2>
+                            <article class="artist">
+                                <figure><img src="../Fotos/metalica.jpg" alt="foto Metalica"></figure>
+                                <div class="textos">    
+                                    <h3>Top 5 Canciones:</h3>
+                                    <ul>                    
+                                        <li>Enter Sandman</li>
+                                        <li>Nothing Else Matters</li>
+                                        <li>Whiskey In The Jar</li>
+                                        <li>The Unforgiven</li>
+                                        <li><a href="detail-track.html">Walk This Way</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </section>
+
+                        <section>
+                            <h2 id="cancerbero">Cancerbero</h2>
+                            <article class="artist">
+                                <figure><img src="../Fotos/cancerbero.jpg" alt="foto Cancerbero"></figure>    
+                                <div class="textos">
+                                    <h3>Top 5 Canciones:</h3>
+                                    <ul>                    
+                                        <li><a href="detail-track.html">Es Epico</a></li>
+                                        <li>Maquiavélico</li>
+                                        <li>Jeremias 17-5</li>
+                                        <li>Pensando en Ti</li>
+                                        <li>Stupid Love Story</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </section>
+
+                        <section>
+                            <h2 id="guns n roses">Guns N' Roses</h2>
+                            <article class="artist">
+                                <figure><img src="../Fotos/Guns n roses.jpg" alt="foto Guns N' Roses"></figure>
+                                <div class="textos">   
+                                    <h3>Top 5 Canciones:</h3>
+                                    <ul>                    
+                                        <li>Sweet Child O' Mine</li>
+                                        <li><a href="detail-track.html">November Rain</a></li>
+                                        <li>Paradise City</li>
+                                        <li>Welcome To The Jungle</li>
+                                        <li>Knockin' On Heaven's Door</li>
+                                    </ul>
+                                </div> 
+                            </article>
+                        </section>
+
+                        <section>
+                            <h2 id="aerosmith">Aerosmith</h2>
+                            <article class="artist">
+                                <figure><img src="../Fotos/aerosmith.jpg" alt="foto Aerosmith"></figure>
+                                <div class="textos">    
+                                    <h3>Top 5 Canciones:</h3>
+                                    <ul>                    
+                                        <li>Dream On</li>
+                                        <li><a href="detail-track.html">Walk This Way</a></li>
+                                        <li>I Don't Want to Miss a Thing</li>
+                                        <li>Sweet Emotion</li>
+                                        <li>Crazy</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </section>
+                    </div>    
+                </div>
+            </main>
+
+            <div id="container">
+                <div id="main">
+                </div>
+            </div>
+        
+            <footer id="footer">
+                <ul>
+                    <li>Preuss Gonzalo</li>
+                    <li>Segundo Benito</li>
+        
                 </ul>
-            </nav>
-            <a class="cta" href="#"><button>Contact</button></a>
-        </header>
-        <main>
-            <div class="contenedor" id="cont_artist">
-                <section id="titulo_artist">
-                    <h1>Detalles de Artistas</h1>
-                </section>
-                    
-                <div class="sections" id="sections_artist">
-
-                    <section>
-                        <h2 id="bob">Bob Marley</h2>
-                        <article class="artist">
-                            <figure><img src="../Fotos/bob.jpg" alt="foto Bob Marley"></figure>
-                            <div class="textos">
-                                <h3>Top 5 Canciones:</h3>
-                                <ul>                    
-                                    <li>Three Little Birds</li>
-                                    <li>Is This Love</li>
-                                    <li>Could You Be Loved</li>
-                                    <li>Buffalo Soldier</li>
-                                    <li><a href="detail-track.html">Jamming</a></li>
-                                </ul>
-                            </div>
-                        </article>
-                    </section>
-
-                    <section> 
-                        <h2 id="metalica">Metalica</h2>
-                        <article class="artist">
-                            <figure><img src="../Fotos/metalica.jpg" alt="foto Metalica"></figure>
-                            <div class="textos">    
-                                <h3>Top 5 Canciones:</h3>
-                                <ul>                    
-                                    <li>Enter Sandman</li>
-                                    <li>Nothing Else Matters</li>
-                                    <li>Whiskey In The Jar</li>
-                                    <li>The Unforgiven</li>
-                                    <li><a href="detail-track.html">Walk This Way</a></li>
-                                </ul>
-                            </div>
-                        </article>
-                    </section>
-
-                    <section>
-                        <h2 id="cancerbero">Cancerbero</h2>
-                        <article class="artist">
-                            <figure><img src="../Fotos/cancerbero.jpg" alt="foto Cancerbero"></figure>    
-                            <div class="textos">
-                                <h3>Top 5 Canciones:</h3>
-                                <ul>                    
-                                    <li><a href="detail-track.html">Es Epico</a></li>
-                                    <li>Maquiavélico</li>
-                                    <li>Jeremias 17-5</li>
-                                    <li>Pensando en Ti</li>
-                                    <li>Stupid Love Story</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </section>
-
-                    <section>
-                        <h2 id="guns n roses">Guns N' Roses</h2>
-                        <article class="artist">
-                            <figure><img src="../Fotos/Guns n roses.jpg" alt="foto Guns N' Roses"></figure>
-                            <div class="textos">   
-                                <h3>Top 5 Canciones:</h3>
-                                <ul>                    
-                                    <li>Sweet Child O' Mine</li>
-                                    <li><a href="detail-track.html">November Rain</a></li>
-                                    <li>Paradise City</li>
-                                    <li>Welcome To The Jungle</li>
-                                    <li>Knockin' On Heaven's Door</li>
-                                </ul>
-                            </div> 
-                        </article>
-                    </section>
-
-                    <section>
-                        <h2 id="aerosmith">Aerosmith</h2>
-                        <article class="artist">
-                            <figure><img src="../Fotos/aerosmith.jpg" alt="foto Aerosmith"></figure>
-                            <div class="textos">    
-                                <h3>Top 5 Canciones:</h3>
-                                <ul>                    
-                                    <li>Dream On</li>
-                                    <li><a href="detail-track.html">Walk This Way</a></li>
-                                    <li>I Don't Want to Miss a Thing</li>
-                                    <li>Sweet Emotion</li>
-                                    <li>Crazy</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </section>
-                </div>    
-            </div>
-        </main>
-
-        <div id="container">
-            <div id="main">
-            </div>
+        
+            </footer>
         </div>
-    
-        <footer id="footer">
-            <ul>
-                <li>Preuss Gonzalo</li>
-                <li>Segundo Benito</li>
-    
-            </ul>
-    
-        </footer>
+   
     </body>
 </html>
