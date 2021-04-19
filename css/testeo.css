@@ -16,7 +16,7 @@ main a:hover {
     width: 100%;
     flex-flow: row wrap;
 }
-header {
+/*header {
     background-color: #131314;
     width: 100%;
     padding: 20px;
@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-}
+}*/
 .main {
     display: flex;
     flex-flow: row wrap;
