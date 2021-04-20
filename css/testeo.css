@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 * {
     box-sizing: border-box;
-    font-family: "montserrat", sans-serif;
 }
 body {
     min-width: 320px;
