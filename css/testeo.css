@@ -57,13 +57,13 @@ main a {
 .sections{ 
     display: flex;
     flex-flow: row wrap;
-    
+    margin: auto;
 }
 .section {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
-    margin-top: 15px;
+    width: 40%;
+    margin: auto;
     background-color: #383830;
     align-items: center;
     justify-content: center;
@@ -91,7 +91,7 @@ article.nombre_artista {
 }
 .artist{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-content: center;
     align-items: center;
 
@@ -140,13 +140,15 @@ article.nombre_artista {
     padding-left: 10px;
 }
 .player {
-    width: 10%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
 }
 .player img {
-    width: 100%;
+    width: 25%;
 }
 .imagen_track{
-    width: 10%;
+    width: 100%;
     text-align: center;
 }
 .imagen_track img{
@@ -154,7 +156,9 @@ article.nombre_artista {
     border-radius: 100%;
 }
 .nombre_canciones {
-    width: 80%;
+    display: flex;
+    flex-flow: column;
+    width: 75%;
     font-size: 7px;
 }
 .nombre_canciones li {
@@ -164,6 +168,10 @@ article.nombre_artista {
 .nombre_canciones ul {
     padding: 0px;
     padding-left: 3%;
+    margin: 0;
+}
+.nombre_tema li{
+    font-weight: bold;
 }
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/
