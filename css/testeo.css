@@ -8,18 +8,12 @@ body {
     width: 100%;
     margin: 0;
     font-family: "montserrat", sans-serif;
+    color: yellow;
+    background-color: black;
+    min-height: 100vh;
 }
 main a:hover {
     color: #0088a9;
-}
-
-.contenedor{
-    display: flex;
-    background-color: black;
-    color: yellow;
-    min-width: 320px;
-    width: 100%;
-    flex-flow: row wrap;
 }
 /*header {
     background-color: #131314;
@@ -32,11 +26,6 @@ main a:hover {
 }*/
 main{
     width: 100%;
-
-}
-.main {
-    display: flex;
-    flex-flow: row wrap;
     padding: 0;
     align-items: center;
 }
@@ -45,15 +34,11 @@ main a {
     text-decoration: none;
     color: yellow;
 }
-
-.titulo_pagina {   
+main h1{
     width: 100%;
     text-align: center;
     font-size: 25px;
-}
-.titulo_pagina h1{
     margin: auto;
-    
 }
 .sections{ 
     display: flex;
@@ -143,7 +128,7 @@ article.nombre_artista {
 .player {
     width: 100%;
     display: flex;
-    flex-flow: row;
+    align-items: center;
 }
 .player img {
     width: 25%;
@@ -157,9 +142,6 @@ article.nombre_artista {
     border-radius: 100%;
 }
 .nombre_canciones {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
     width: 75%;
     font-size: 7px;
 }
@@ -177,8 +159,6 @@ article.nombre_artista {
 }
 .playlist {
     font-size: 5px;
-}
-footer ul {
 }
 
 /* Para que se modifique en pantalla de Desktop*/
