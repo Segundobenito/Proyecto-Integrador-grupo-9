@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 * {
     box-sizing: border-box;
-    font-family: "montserrat", sans-serif;
 }
 body {
     min-width: 320px;
     width: 100%;
+    margin: 0;
+    font-family: "montserrat", sans-serif;
 }
 main a:hover {
     color: #0088a9;
@@ -158,6 +159,7 @@ article.nombre_artista {
 .nombre_canciones {
     display: flex;
     flex-flow: column;
+    justify-content: center;
     width: 75%;
     font-size: 7px;
 }
@@ -170,8 +172,14 @@ article.nombre_artista {
     padding-left: 3%;
     margin: 0;
 }
-.nombre_tema li{
+.nombre_tema{
     font-weight: bold;
 }
+.playlist {
+    font-size: 5px;
+}
+footer ul {
+}
+
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/
