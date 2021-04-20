@@ -4,15 +4,19 @@
     box-sizing: border-box;
     font-family: "montserrat", sans-serif;
 }
-
-
+body {
+    min-width: 320px;
+    width: 100%;
+}
 main a:hover {
     color: #0088a9;
 }
+
 .contenedor{
     display: flex;
     background-color: black;
     color: yellow;
+    min-width: 320px;
     width: 100%;
     flex-flow: row wrap;
 }
@@ -25,9 +29,15 @@ main a:hover {
     align-items: center;
     flex-flow: row wrap;
 }*/
+main{
+    width: 100%;
+
+}
 .main {
     display: flex;
     flex-flow: row wrap;
+    padding: 0;
+    align-items: center;
 }
 
 main a {
@@ -38,8 +48,7 @@ main a {
 .titulo_pagina {   
     width: 100%;
     text-align: center;
-    font-size: 60px;
-    background-color: #383830;
+    font-size: 25px;
 }
 .titulo_pagina h1{
     margin: auto;
@@ -48,13 +57,16 @@ main a {
 .sections{ 
     display: flex;
     flex-flow: row wrap;
+    margin: auto;
 }
 .section {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
-    margin-top: 70px;
+    width: 40%;
+    margin: auto;
     background-color: #383830;
+    align-items: center;
+    justify-content: center;
 }
 article {
     width: 100%;
@@ -62,7 +74,7 @@ article {
 }
 article.nombre_artista {
     text-align: center;
-    font-size: 40px;
+    font-size: 15px;
     height: auto;
 }
 .nombre_artista h2{
@@ -75,30 +87,91 @@ article.nombre_artista {
 .imagen img{
     width: 100%;
     border-radius: 100%;
+    margin: auto;
 }
 .artist{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+
 }
 .textos {
     display: flex;
     flex-flow: column wrap;
     width: 60%;
     justify-content: center;
+    align-items: center;
 }
 .top {
-    font-size: 40px;
+    font-size: 15px;
     margin-left: 10px;
     text-align: center;
     margin: 0;
 }
 .top h3{
     margin: 0;
+    width: 100%;
 }
 .lista_top{
-    font-size: 25px;
-    margin-left: 50px;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0;
+    padding: 0px;
 }
-
+.lista_album {
+    height: 100%;
+    font-size: 10px;
+    margin-left: 10px;
+    padding: 0;
+}
+.info_album {
+    width: 100%;
+    margin: 0;
+}
+.info_album li {
+    display: inline-block;
+    font-size: 9px;
+    padding: 0px 3px;
+}
+.info_album ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+.player {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+.player img {
+    width: 25%;
+}
+.imagen_track{
+    width: 100%;
+    text-align: center;
+}
+.imagen_track img{
+    width: 100%;
+    border-radius: 100%;
+}
+.nombre_canciones {
+    display: flex;
+    flex-flow: column;
+    width: 75%;
+    font-size: 7px;
+}
+.nombre_canciones li {
+    display: inline-block;
+    padding: 0px 3px;
+}
+.nombre_canciones ul {
+    padding: 0px;
+    padding-left: 3%;
+    margin: 0;
+}
+.nombre_tema li{
+    font-weight: bold;
+}
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/

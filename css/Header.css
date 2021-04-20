@@ -84,7 +84,7 @@ footer {
     position: absolute;
 
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 40px;
     color: yellow;
 }
