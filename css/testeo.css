@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 * {
     box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
 }
 body {
     min-width: 320px;
@@ -142,6 +143,8 @@ article.nombre_artista {
     border-radius: 100%;
 }
 .nombre_canciones {
+    display: flex;
+    flex-flow: column;
     width: 75%;
     font-size: 7px;
 }
@@ -154,7 +157,7 @@ article.nombre_artista {
     padding-left: 3%;
     margin: 0;
 }
-.nombre_tema{
+.nombre_tema li{
     font-weight: bold;
 }
 .playlist {
