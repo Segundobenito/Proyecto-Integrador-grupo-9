@@ -4,9 +4,14 @@
     box-sizing: border-box;
     font-family: "montserrat", sans-serif;
 }
+body {
+    min-width: 320px;
+    width: 100%;
+}
 main a:hover {
     color: #0088a9;
 }
+
 .contenedor{
     display: flex;
     background-color: black;
@@ -42,7 +47,7 @@ main a {
 .titulo_pagina {   
     width: 100%;
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     background-color: #383830;
 }
 .titulo_pagina h1{
@@ -57,7 +62,7 @@ main a {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 15px;
     background-color: #383830;
 }
 article {
@@ -66,7 +71,7 @@ article {
 }
 article.nombre_artista {
     text-align: center;
-    font-size: 40px;
+    font-size: 15px;
     height: auto;
 }
 .nombre_artista h2{
@@ -83,6 +88,7 @@ article.nombre_artista {
 .artist{
     display: flex;
     flex-flow: row wrap;
+    align-content: center;
 }
 .textos {
     display: flex;
@@ -91,7 +97,7 @@ article.nombre_artista {
     justify-content: center;
 }
 .top {
-    font-size: 40px;
+    font-size: 10px;
     margin-left: 10px;
     text-align: center;
     margin: 0;
@@ -105,8 +111,8 @@ article.nombre_artista {
 }
 .lista_album {
     height: 100%;
-    font-size: 30px;
-    margin-left: 50px;
+    font-size: 10px;
+    margin-left: 10px;
 }
 .player {
     width: 10%;
@@ -124,11 +130,15 @@ article.nombre_artista {
 }
 .nombre_canciones {
     width: 80%;
+    font-size: 10px;
 }
 .nombre_canciones li {
     display: inline-block;
-    padding: 0px 0px;
+    padding: 0px 3px;
 }
-
+.nombre_canciones ul {
+    padding: 0px;
+    padding-left: 3%;
+}
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/
