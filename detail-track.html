@@ -1,104 +1,127 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8">
         <title>Detalle Cancion</title>
-        <link rel="stylesheet" href="../css/details.css">
+        <link rel="stylesheet" href="css/testeo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
     <body>
-        <header>
-            <link rel="stylesheet" href="../Programacion69Proyecto/css/Header.css">
-            <img src="../Fotos/Logo.png" alt="logo">
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="generes.html">Generes</a></li>
-                    <li><a href="playlist.html">Playlist</a></li>
-                    <li>
-                        <form action="search-results.html" method="GET">
-                            <p>
-                                <input type="search" name="Buscar" placeholder="Artista, Cancion, Album...">
-                                <input type="submit" value="Buscar">
-                            </p>
-                        </form>
-                    </li>
+        <div class="contenedor">
+            <header>
+                <div>
+                    <link rel="stylesheet" href="css/Header.css">
+                    <img src="../Fotos/Logo.png" alt="logo">
+                    <nav>
+                        <ul class="nav__links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="generes.html">Generes</a></li>
+                            <li><a href="playlist.html">Playlist</a></li>
+                            <li>
+                                <form action="search-results.html" method="GET">
+                                    <p>
+                                        <input type="search" name="Buscar" placeholder="Artista, Cancion, Album...">
+                                        <input type="submit" value="Buscar">
+                                    </p>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="cta" href="#"><button>Contact</button></a>
+                </div>
+            </header>
+            <main>
+                <div class="main">
+                    <section class="titulo_pagina">
+                        <h1>Canciones</h1>
+                    </section>
+                    <div class="sections" id="sections_artist">
+                        <section class="section">               
+                            <article class="nombre_artista"><h2 id="Jamming">Jamming</h2></article>
+                            <article class="artist">
+                                <div class="player"><img src="Fotos/play.png" alt="reproductor"></div>
+                                <div class="imagen_track"><img src="../fotos/Exodus.png" alt="foto Exodus"></div>
+                                <div class="textos">
+                                    <h3><a href="detail-artist.html">Bob Marley</a></h3>
+                                    <h3><a href="detail-album.html" href="#exodus">Exodus</a></h3>
+                                    <h3>Agregar a Mi Playlist</h3>
+                                    <h3>Mi Playlist</h3>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="section">
+                            <article class="artist">
+                                <div class="imagen_track">
+                                    <img src="../Fotos/MuerteCanserbero.jpg" alt="Foto Muerte">
+                                </div>
+                                <div class="player"><img src="Fotos/play.png" alt="reproductor"></div>
+                                <div class="nombre_canciones">
+                                    <ul>
+                                        <li id="es epico">Es Epico, <a href="detail-artist.html">Cancerbero</a></h2></li>
+                                        <li><a href="detail-album.html">Muerte</a></li>
+                                        <li class="agregar">+</li>
+                                        <li>Mi Playlist</li>
+                                    </ul>
+                                </div>  
+                            </article>
+                        </section>
+                        <section class="section">
+                            <article class="nombre_artista"><h2 id="master of puppets tema">Master of Puppets</h2></article>
+                            <article class="artist">
+                                <div class="player"><img src="Fotos/play.png" alt="reproductor"></div>
+                                <div class="imagen_track"><img src="../Fotos/Master_of_Puppets.jpg" alt="Foto Master of Puppets"></div>
+                                <div class="textos">
+                                    <h3><a href="detail-artist.html">Metalica</a></h3>
+                                    <h3><a href="detail-album.html">Master of Puppets</a></h3>
+                                    <h3>Agregar a Mi Playlist</h3>
+                                    <h3>Mi Playist</h3>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="section">
+                            <article class="nombre_artista"><h2 id="november rain">November Rain</h2></article>
+                            <article class="artist">
+                                <div class="player"><img src="Fotos/play.png" alt="reproductor"></div>
+                                <div class="imagen_track"><img src="../Fotos/UseYourIllusionI.jpg" alt="Foto Use Your Illusion I"></div>
+                                <div class="textos">
+                                    <h3><a href="detail-artist.html">Guns N' Roses</a></h3>
+                                    <h3><a href="detail-album.html">Use Your Illusion I</a></h3>
+                                    <h3>Agregar a Mi Playlist</h3>
+                                    <h3>Mi Playlist</h3>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="section">
+                            <article class="nombre_artista"><h2 id="walk this way">Walk This Way</h2></article>
+                            <article class="artist">
+                                <div class="player"><img src="Fotos/play.png" alt="reproductor"></div>
+                                <div class="imagen_track"><img src="../Fotos/aerosmith - toys in the attic.jpg" alt="Toys in the Attic"></div>
+                                <div class="textos">
+                                    <h3><a href="detail-artist.html">Aerosmith</a></h3>
+                                    <h3><a href="detail-album.html">Toys in The Atic</a></h3>   
+                                    <h3>Agregar a Mi playlist</h3>
+                                    <h3>Mi Playlist</h3>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+            </main>
+
+            <footer id="footer">
+                <ul>
+                    <li>Segundo Benito - +55 11 95552-8696 </li>
+                    <li>Gonzalo Preuss - +54 9 11 3252-6268</li>
                 </ul>
-            </nav>
-            <a class="cta" href="#"><button>Contact</button></a>
-        </header>
-
-        <main>
-                <h1>Detalles de la Cancion</h1>
-
-            <h2 id="Jamming">Jamming</h2>
-            <h3><a href="detail-artist.html">Bob Marley</a></h3>
-            <h3><a href="detail-album.html" href="#exodus">Exodus</a></h3>
-            <img src="../fotos/Exodus.png" alt="foto Exodus">
-            <iframe width="350" height="315" src="https://www.youtube.com/embed/RIMxmnfDSOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3>Agregar a Mi Playlist</h3>
-            <h3>Mi Playlist</h3>
-
-            <h2 id="es epico">Es Epico</h2>
-            <h3><a href="detail-artist.html">Cancerbero</a></h3>
-            <h3><a href="detail-album.html">Muerte</a></h3>
-            <iframe width="350" height="300" src="https://www.youtube.com/embed/xK8SEUzk7BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <img width="350" height="300" src="../Fotos/MuerteCanserbero.jpg" alt="Foto Muerte">
-            <h3>Agregr a Mi Playlist</h3>
-            <h3>Mi Playlist</h3>
         
-            <h2 id="master of puppets tema">Master of Puppets</h2>
-            <h3><a href="detail-artist.html">Metalica</a></h3>
-            <h3><a href="detail-album.html">Master of Puppets</a></h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kV-2Q8QtCY4" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>  
-            <img src="../Fotos/Master_of_Puppets.jpg" alt="Foto Master of Puppets">
-            <h3>Agregar a Mi Playlist</h3>
-            <h3>Mi Playist</h3>
-
-            <h2 id="november rain">November Rain</h2>
-            <h3><a href="detail-artist.html">Guns N' Roses</a></h3>
-            <h3><a href="detail-album.html">Use Your Illusion I</a></h3>  
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8SbUC-UaAxE" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>   
-            <img src="../Fotos/UseYourIllusionI.jpg" alt="Foto Use Your Illusion I">
-            <h3>Agregar a Mi Playlist</h3>
-            <h3>Mi Playlist</h3>
-
-            <h2 id="walk this way">Walk This Way</h2>
-            <h3><a href="detail-artist.html">Aerosmith</a></h3>
-            <h3><a href="detail-album.html">Toys in The Atic</a></h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/pL4uESRCnv8" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>  
-            <img src="../Fotos/aerosmith - toys in the attic.jpg" alt="Toys in the Attic">
-            <h3>Agregar a Mi playlist</h3>
-            <h3>Mi Playlist</h3>
-        </main>
-
-        <div id="container">
-            <div id="main">
-            </div>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+            
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </footer>
         </div>
-
-        <footer id="footer">
-            <ul>
-                <li>Segundo Benito - +55 11 95552-8696 </li>
-                <li>Gonzalo Preuss - +54 9 11 3252-6268</li>
-            </ul>
-    
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-          
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-youtube"></a>
-          
-
     </body>
-
 </html>
