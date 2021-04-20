@@ -9,15 +9,13 @@ header,footer {
     color: yellow;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 25%;
 }
 
 
 
 header nav {
-    float: right;
-    margin-top: 60px;
-    margin-right: 200px;
+    width: 75%;
 }
 
 
@@ -25,12 +23,10 @@ a {
     text-decoration: none;
     font-style: oblique;
     color: yellow;
-
 }
 
-.logo {
-    cursor: pointer;
-
+header img {
+    width: 25%;
 }
 
 .nav__links {
@@ -39,7 +35,7 @@ a {
 
 .nav__links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0% 20%;
 }
 
 .nav__links li a {
@@ -53,7 +49,7 @@ a {
 
 
 header a {
-    font-size: 40px;
+    font-size: 40%;
     text-decoration: none;
     font-style: oblique;
     color: yellow;
@@ -69,14 +65,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 2%
+    padding: 30% 2%
 }
 
 
 header li {
     float: left;
     list-style: none;
-    padding: 10px;
+    padding: 10%;
 }
 
 
@@ -90,7 +86,7 @@ footer {
 
     height: auto;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 40%;
     color: yellow;
 }
 
@@ -105,5 +101,5 @@ footer {
 footer li {
     float: left;
     list-style: none;
-    padding: 10px;
+    padding: 10%;
 }

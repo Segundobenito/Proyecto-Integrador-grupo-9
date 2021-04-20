@@ -9,17 +9,17 @@ body {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 45%;
     font-style: italic;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 30%;
     font-style: oblique;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 20%;
     font-style: oblique;
 }
 
@@ -33,7 +33,7 @@ h3 {
     color: yellow;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 25%;
     margin: 40;
     padding: 100;
 }
@@ -49,15 +49,15 @@ body {
 
 #main {
     overflow: auto;
-    padding-bottom: 100px;
+    padding-bottom: 100%;
 }
 
 
 #footer {
     background-color: yellow;
     position: relative;
-    height: 100px;
-    margin-top: -100px;
+    height: 100%;
+    margin-top: -100%;
     clear: both;
 }
 
@@ -71,7 +71,7 @@ body {
 
 .edits li a {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0% 20%;
     transition: all 0.3s ease 0s;
 }
 
@@ -83,7 +83,7 @@ body {
 
 header nav {
     float: right;
-    margin-top: 60px;
+    margin-top: 60%;
     margin-right: 200px;
 }
 
