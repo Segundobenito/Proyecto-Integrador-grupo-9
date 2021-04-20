@@ -5,18 +5,23 @@
    
 }
 
+header{
+    display: flex;
+}
+
 header, footer {
     background-color: #131314;
     color: yellow;
     font-family: "Montserrat", sans-serif;
 }
 
-header nav {
-    width: 75%;
-    margin: 0;
-    padding: 0;
-}
 
 header img {
     width: 25%;
+}
+
+header ul{
+    width: 75%;
+    margin: auto;
+    padding: 0;
 }
