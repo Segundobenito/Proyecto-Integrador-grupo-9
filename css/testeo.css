@@ -39,6 +39,8 @@ main h1{
     text-align: center;
     font-size: 25px;
     margin: auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 .sections{ 
     display: flex;
@@ -63,17 +65,20 @@ article.nombre_artista {
     font-size: 15px;
     height: auto;
 }
-.nombre_artista h2{
-    margin: auto;
+.nombre_artista {
+    margin: 0;
+    font-size: 20px;
 }
 .imagen{
-    width: 40%;
+    width: 100%;
     text-align: center;
+    border-radius: 100%;
+    margin: auto;
 }
 .imagen img{
     width: 100%;
-    border-radius: 100%;
-    margin: auto;
+    
+    
 }
 .artist{
     display: flex;
@@ -129,9 +134,15 @@ article.nombre_artista {
     width: 100%;
     display: flex;
     align-items: center;
+
 }
 .player img {
     width: 25%;
+}
+.player h2 {
+    width: 75%;
+    font-size: 13px;
+    padding-left: 10px;
 }
 .imagen_track{
     width: 100%;
@@ -156,12 +167,18 @@ article.nombre_artista {
     padding-left: 3%;
     margin: 0;
 }
-.nombre_tema li{
+.nombre_tema {
     font-weight: bold;
 }
 .playlist {
     font-size: 5px;
 }
-
+.nombre_album {
+    
+    font-size: 13px;
+}
+.nombre_album h2{
+    
+}
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/
