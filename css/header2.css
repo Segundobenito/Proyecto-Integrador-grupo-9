@@ -32,22 +32,20 @@ header img {
 }
 
 header ul {
+    display: flex;
     width: 100%;
     margin: auto;
     padding: 0;
-
 }
 header li {
-    float:left;
     list-style: none;
     padding: 0;
     margin: auto;
     width: 25%;
+    text-align: center;
 }
 
 body {
-    min-width: 320px;
-    width: 100%;
     margin: 0;
     font-family: "montserrat", sans-serif;
     color: yellow;
@@ -63,26 +61,13 @@ header a {
 header a:hover {
     color: teal;
 }
-
 footer {
-    position: absolute;
-
     height: auto;
     width: 100%;
     padding-top: 40%;
     color: yellow;
 }
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
 footer li {
-    float: left;
     list-style: none;
     padding: 10%;
 }
