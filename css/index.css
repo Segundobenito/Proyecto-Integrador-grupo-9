@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 body {
-    min-width: 320px;
-    width: 100%;
-    margin: 0;
     font-family: "montserrat", sans-serif;
     color: yellow;
     background-color: black;
@@ -15,21 +12,6 @@ body {
 main a:hover {
     color: #0088a9;
 }
-/*header {
-    background-color: #131314;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-}*/
-main{
-    width: 100%;
-    padding: 0;
-    align-items: center;
-}
-
 main a {
     text-decoration: none;
     color: yellow;
@@ -37,144 +19,41 @@ main a {
 main h1{
     width: 100%;
     text-align: center;
-    font-size: 25px;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 5px;
 }
-.sections{ 
-    display: flex;
-    flex-flow: row wrap;
+main h2{
+    width: 100%;
+    text-align: center;
     margin: auto;
+    padding-bottom: 5px;
+    padding-top:60px;
 }
-.section {
+section{
     display: flex;
     flex-flow: row wrap;
-    width: 40%;
     margin: auto;
-    align-items: center;
     justify-content: center;
 }
 article {
-    width: 100%;
-    height: auto;
-}
-article.nombre_artista {
-    text-align: center;
-    font-size: 15px;
-    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 40%;
+    padding-top: 10px;
 }
 .nombre_artista {
-    margin: 0;
-    font-size: 20px;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
 }
 .imagen{
     width: 100%;
-    text-align: center;
     border-radius: 100%;
-    margin: auto;
 }
 .imagen img{
     width: 100%;
-    
-    
-}
-.artist{
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    align-items: center;
-
-}
-.textos {
-    display: flex;
-    flex-flow: column wrap;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-}
-.top {
-    font-size: 15px;
-    margin-left: 10px;
-    text-align: center;
-    margin: 0;
-}
-.top h3{
-    margin: 0;
-    width: 100%;
-}
-.lista_top{
-    font-size: 10px;
-    margin: 0px;
-    padding: 0;
-    padding: 0px;
-}
-.lista_album {
-    height: 100%;
-    font-size: 10px;
-    margin-left: 10px;
-    padding: 0;
-}
-.info_album {
-    width: 100%;
-    margin: 0;
-}
-.info_album li {
-    display: inline-block;
-    font-size: 9px;
-    padding: 0px 3px;
-}
-.info_album ul {
-    margin: 0;
-    padding: 0;
-    padding-left: 10px;
-}
-.player {
-    width: 100%;
-    display: flex;
-    align-items: center;
-
-}
-.player img {
-    width: 25%;
-}
-.player h2 {
-    width: 75%;
-    font-size: 13px;
-    padding-left: 10px;
-}
-.imagen_track{
-    width: 100%;
-    text-align: center;
-}
-.imagen_track img{
-    width: 100%;
-    border-radius: 100%;
-}
-.nombre_canciones {
-    display: flex;
-    flex-flow: column;
-    width: 75%;
-    font-size: 7px;
-}
-.nombre_canciones li {
-    display: inline-block;
-    padding: 0px 3px;
-}
-.nombre_canciones ul {
-    padding: 0px;
-    padding-left: 3%;
-    margin: 0;
-}
-.nombre_tema {
-    font-weight: bold;
-}
-.playlist {
-    font-size: 5px;
-}
-.nombre_album {
-    
-    font-size: 13px;
 }
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/
