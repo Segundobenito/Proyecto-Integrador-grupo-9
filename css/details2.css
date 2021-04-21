@@ -36,10 +36,12 @@ main a {
 }
 .info_artista{
     padding-left: 2%;
+    margin: 0;
 }
 .titulo_lista{
     margin: 0;
     padding-left: 2%;
+    padding-top: 20px;
 }
 .menu_lista{
     display: flex;
@@ -61,8 +63,6 @@ main a {
 .reproducciones_menu{
     width: 35%;
 }
-
-
 .lista_canciones{
     display: flex;
     align-items: center;
@@ -79,9 +79,13 @@ main a {
     width: 30%;
     padding-left: 2%;
 }
-
 ol {
     font-size: 13px;
     margin: 0;
     padding-left: 25px;
+}
+
+/*detail track*/
+.imagen_secundaria{
+    width: 35%;
 }
