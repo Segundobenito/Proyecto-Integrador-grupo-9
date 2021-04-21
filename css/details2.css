@@ -125,3 +125,18 @@ ol {
 .reproducciones_menu_alb{
     width: 33%;
 }
+.agregado_album{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+.mini{
+    width: 10%;
+    border-radius: 100%;
+}
+.fecha{
+    padding-left: 4%;
+}
+.nombre_agregado{
+    padding-left: 3%;
+}

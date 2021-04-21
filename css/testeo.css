@@ -52,7 +52,6 @@ main h1{
     flex-flow: row wrap;
     width: 40%;
     margin: auto;
-    background-color: #383830;
     align-items: center;
     justify-content: center;
 }
