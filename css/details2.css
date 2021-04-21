@@ -29,7 +29,18 @@ main a {
 .imagen_artista{
     width: 100%;
 }
-
+.titulo{
+    font-size: 40px;
+    margin: 0;
+    padding-left: 2%;
+}
+.info_artista{
+    padding-left: 2%;
+}
+.titulo_lista{
+    margin: 0;
+    padding-left: 2%;
+}
 .menu_lista{
     display: flex;
     align-items: center;
