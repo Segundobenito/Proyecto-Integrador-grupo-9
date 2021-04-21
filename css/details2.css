@@ -89,3 +89,18 @@ ol {
 .imagen_secundaria{
     width: 35%;
 }
+.agregar {
+    margin: 0;
+}
+.sector_foto{
+    display: flex;
+    flex-direction: row;
+}
+.info_sector{
+    width: 65%;
+    padding-left: 2%;
+}
+.info_sector p{
+    margin: 0;
+    padding-top: 3%;
+}
