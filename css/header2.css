@@ -62,18 +62,28 @@ header a:hover {
     color: teal;
 }
 footer {
+    display: flex;
     height: auto;
-    width: 100%;
-    padding-top: 40%;
     color: yellow;
+    padding: 15px;
+    margin-top: 30px;
+    
 }
-footer li {
+.nombres {
     list-style: none;
-    padding: 10%;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+}
+
+.sociales {
+    width: 30%;
+
 }
 
 footer a {
     text-decoration: none;
     font-style: oblique;
     color: yellow;
+    width: 40%;
 }
