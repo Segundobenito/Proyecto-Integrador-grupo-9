@@ -106,3 +106,22 @@ ol {
 }
 
 /*detail album*/
+.nombre_cl_alb{
+    width: 70%;
+    padding-left: 2%;
+}
+.reproducciones_alb{
+    width: 25%;
+    padding-left: 2%;
+}
+.posicion_menu_alb{
+    width: 7%;
+    padding-left: 4%;
+}
+.nombre_menu_alb{
+    width: 57%;
+    padding-left: 4%;
+}
+.reproducciones_menu_alb{
+    width: 33%;
+}
