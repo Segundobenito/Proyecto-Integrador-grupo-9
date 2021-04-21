@@ -73,11 +73,13 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 60%;
+    
 }
 
 .sociales {
-    width: 30%;
+    width: 40%;
+    list-style: none;
 
 }
 
@@ -85,5 +87,5 @@ footer a {
     text-decoration: none;
     font-style: oblique;
     color: yellow;
-    width: 40%;
+   
 }
