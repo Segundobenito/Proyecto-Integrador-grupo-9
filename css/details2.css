@@ -1,0 +1,76 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    min-width: 320px;
+    width: 100%;
+    margin: 0;
+    font-family: "montserrat", sans-serif;
+    color: yellow;
+    background-color: black;
+    min-height: 100vh;
+}
+main a:hover {
+    color: #0088a9;
+}
+main{
+    width: 100%;
+    padding: 0;
+    align-items: center;
+}
+
+main a {
+    text-decoration: none;
+    color: yellow;
+}
+
+/*detail artist*/
+.imagen_artista{
+    width: 100%;
+}
+
+.menu_lista{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.imagen_menu{
+    width: 18%;
+    padding-left: 2%;
+}
+.posicion_menu{
+    width: 7%;
+    padding-left: 2%;
+}
+.nombre_menu{
+    width: 40%;
+    padding-left: 4%;
+}
+.reproducciones_menu{
+    width: 35%;
+}
+
+
+.lista_canciones{
+    display: flex;
+    align-items: center;
+}
+.imagen_all{
+    width: 20%;
+    border-radius: 100%;
+}
+.nombre_cl{
+    width: 50%;
+    padding-left: 2%;
+}
+.reproducciones{
+    width: 30%;
+    padding-left: 2%;
+}
+
+ol {
+    font-size: 13px;
+    margin: 0;
+    padding-left: 25px;
+}
