@@ -50,6 +50,11 @@ main a {
     align-items: center;
     font-size: 13px;
 }
+.menu_lista2{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
 .imagen_menu{
     width: 18%;
     padding-left: 2%;
@@ -153,6 +158,11 @@ main a {
     margin-left: 3%;
     font-size: 13px;
 }
+.agregado_album3{
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}
 .agregar{
     width: 60%;
 }
@@ -182,13 +192,15 @@ main a {
     }
     /* listas */
     .lista_canciones{
-        font-size: 25px;
+        font-size: 22px;
     }
     .menu_lista{
+        font-size: 20px;
+    }
+    .menu_lista2{
         font-size: 22px;
     }
     .lista{
-        font-size: 25px;
         margin-left: 7%;
         padding-left: 0;
     }
@@ -230,6 +242,10 @@ main a {
         width: 100%;
         font-size: 25px;
     }
+    .agregado_album3{
+        width: 100%;
+        font-size: 25px;
+    }
     .agregar{
         margin-right: 0%;
         width: 35%;
@@ -244,7 +260,42 @@ main a {
 }
 
 @media (min-width: 1000px) {
-    .nombre_resultado a{
-        font-size: 100px;
+    .titulo{
+        font-size: 75px;
+    }
+    .lista_canciones{
+        font-size: 40px;
+    }
+    .menu_lista2{
+        font-size: 50px;
+        text-align: center;
+    }
+    .menu_lista{
+        font-size: 42px;
+    }
+    .titulo_lista{
+        font-size: 50px;
+    }
+    .section_cancion{
+        display: flex;
+    }
+    .agregado_album3{
+        width: 93%;
+        font-size: 40px;
+    }
+    .agregado_album2{
+        width: 65%;
+    }
+    .agregado_album{
+        width: 35%;
+    }
+    .agregar{
+        width: 45%;
+    }
+    .info_artista{
+        font-size: 30px
+    }
+    .cateoria{
+        font-size: 35px;
     }
 }
