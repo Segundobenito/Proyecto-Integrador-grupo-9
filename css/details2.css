@@ -170,7 +170,7 @@ main a {
     font-size: 12px;
 }
 /*tablet*/
-@media (min-width: 460px) {
+@media (min-width: 500px) {
     .titulo{
         font-size: 50px;
     }
@@ -185,7 +185,7 @@ main a {
         font-size: 25px;
     }
     .menu_lista{
-        font-size: 30px;
+        font-size: 20px;
     }
     .lista{
         font-size: 25px;
@@ -212,21 +212,24 @@ main a {
     .sector_foto{
         font-size: 30px;
     }
-    .section_cancion{
-        display: flex;
-    }
     .agregado_album{
-        font-size: 25px;
-        width: 48%;
+        font-size: 22px;
+        width: 100%;
         margin-left: 10px;
     }
     .agregado_album2{
-        width: 50%;
-        margin-left: 10px;
-        font-size: 20px;
-        justify-content: center;
+        width: 100%;
+        font-size: 15px;
     }
     .agregar{
         margin-right: 0%;
+        width: 35%;
+    }
+    .agregado_album2 p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .artista_genero_info{
+        font-size: 20px;
     }
 }

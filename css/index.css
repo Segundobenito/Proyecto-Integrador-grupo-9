@@ -38,12 +38,40 @@ section{
     margin: auto;
     justify-content: center;
 }
+.resultado{
+    justify-content: flex-start;
+    align-items: center;
+    background-color:  #131314;
+}
+.resultado div{
+    width: 67%;
+}
+.busqueda{
+    justify-content: flex-start;
+}
+.resultado div p,h3{
+    margin: 0;
+}
+.categoria{
+    text-align: right;
+}
+.resultados_parecidos{
+    width: 30%;
+}
+.resultados_parecidos h3{
+    font-size: 15px;
+}
+.coment{
+    text-align: left;
+    margin-top: 30px;
+    padding: 0;
+}
 article {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     width: 40%;
-    margin: 5%;
+    margin: 1.5%;
 }
 .nombre_artista {
     margin: auto;
