@@ -45,13 +45,7 @@ header li {
     text-align: center;
 }
 
-body {
-    margin: 0;
-    font-family: "montserrat", sans-serif;
-    color: yellow;
-    background-color: black;
-    min-height: 100vh;
-}
+
 
 header a {
     color: yellow;

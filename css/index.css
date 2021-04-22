@@ -5,10 +5,12 @@
 }
 body {
     font-family: "montserrat", sans-serif;
-    color: yellow(255, 255, 0, 0.411);
+    color:  yellow;
     background-color: black;
     min-height: 100vh;
 }
+
+
 main a:hover {
     color:teal;
 }
