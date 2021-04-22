@@ -3,9 +3,6 @@
     box-sizing: border-box;
 }
 body {
-    min-width: 320px;
-    width: 100%;
-    margin: 0;
     font-family: "montserrat", sans-serif;
     color: yellow;
     background-color: black;
@@ -32,7 +29,7 @@ main a {
 .titulo{
     font-size: 40px;
     margin: 0;
-    padding-left: 2%;
+    margin-left: 2%;
 }
 .info_artista{
     padding-left: 2%;
@@ -96,6 +93,8 @@ ol {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 15px;
+    margin-left: 2%;
 }
 .info_sector{
     width: 65%;
@@ -143,4 +142,25 @@ ol {
 }
 .artista_genero_info {
     font-size: 12px;
+}
+/*tablet*/
+@media (min-width: 460px) {
+    .titulo{
+        font-size: 50px;
+    }
+    /* listas */
+    .lista_canciones{
+        font-size: 25px;
+    }
+    .menu_lista{
+        font-size: 30px;
+    }
+    .posicion_menu_alb{
+    }
+    .lista{
+        font-size: 25px;
+        margin-left: 5%;
+        padding-left: 0;
+    }
+
 }
