@@ -164,7 +164,7 @@ main a {
     padding-left: 4%;
 }
 .nombre_agregado{
-    padding-left: 3%;
+    padding-left: 2%;
 }
 .artista_genero_info {
     font-size: 12px;
@@ -185,24 +185,33 @@ main a {
         font-size: 25px;
     }
     .menu_lista{
-        font-size: 20px;
+        font-size: 22px;
     }
     .lista{
         font-size: 25px;
-        margin-left: 5%;
+        margin-left: 7%;
         padding-left: 0;
     }
     .titulo_lista{
         font-size: 30px;
     }
+    .artista_menu{
+        margin-left: 20px;
+    }
     .nombre_menu{
-        width: 45%;
+        width: 50%;
     }
     .posicion_menu_alb{
         padding-left: 10px;
     }
     .nombre_menu_alb{
         padding-left: 10px;
+    }
+    .reproducciones_menu_alb{
+        width: 35%;
+    }
+    .combre_cl_alb{
+        width: 68%;
     }
     .nombre_cl{
         margin-left: 10px;
@@ -213,13 +222,13 @@ main a {
         font-size: 30px;
     }
     .agregado_album{
-        font-size: 22px;
+        font-size: 30px;
         width: 100%;
         margin-left: 10px;
     }
     .agregado_album2{
         width: 100%;
-        font-size: 15px;
+        font-size: 25px;
     }
     .agregar{
         margin-right: 0%;
@@ -231,5 +240,11 @@ main a {
     }
     .artista_genero_info{
         font-size: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nombre_resultado a{
+        font-size: 100px;
     }
 }
