@@ -37,6 +37,7 @@ header ul {
     margin: auto;
     padding: 0;
 }
+
 header li {
     list-style: none;
     padding: 0;
@@ -55,6 +56,7 @@ header a {
 header a:hover {
     color: teal;
 }
+
 footer {
     display: flex;
     height: auto;
@@ -62,13 +64,14 @@ footer {
     margin-top: 30px;
     flex-wrap: wrap;
 }
+
 .nombres {
     list-style: none;
     margin: 0;
-    padding-left:3%;
+    padding-left: 3%;
     width: 50%;
     margin-top: 10px;
-    
+
 }
 
 .sociales {
@@ -80,17 +83,39 @@ footer {
     margin-bottom: 10px;
 }
 
+.sociales li {
+    margin-left: 10px;
+}
+
 footer a {
     text-decoration: none;
     font-style: oblique;
     color: yellow;
-   
 }
 
-@media (min-width: 500px){
-   header ul {
+
+@media (min-width: 500px) {
+    header ul {
         font-size: 30px;
+    }
+
+    .nombres {
+        font-size: 25px;
+    }
+    .sociales a {
+        font-size: 15px;
     }
 }
 
-
+@media (min-width: 1000px) {
+    header ul {
+        font-size: 40px;
+    }
+    .nombres {
+        font-size: 30px;
+    }
+    
+    .sociales a {
+        font-size: 25px;
+    }
+}
