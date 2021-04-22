@@ -30,6 +30,7 @@ main a {
     font-size: 40px;
     margin: 0;
     margin-left: 2%;
+    
 }
 .categoria{
     margin-left: 2%;
@@ -90,8 +91,15 @@ main a {
     padding-left: 2%;
 }
 /*detail track*/
-button{
-    margin-right: 10px;
+.titulo_track{
+    display: flex;
+    align-items: center;
+}
+.titulo_track a{
+    width: 10%;
+}
+.reproductor_img{
+    width: 100%;
 }
 .imagen_secundaria{
     width: 35%;
@@ -188,6 +196,20 @@ button{
     .titulo_lista{
         font-size: 30px;
     }
+    .nombre_menu{
+        width: 45%;
+    }
+    .posicion_menu_alb{
+        padding-left: 10px;
+    }
+    .nombre_menu_alb{
+        padding-left: 10px;
+    }
+    .nombre_cl{
+        margin-left: 10px;
+    }
+
+
     .sector_foto{
         font-size: 30px;
     }
@@ -207,8 +229,5 @@ button{
     }
     .agregar{
         margin-right: 0%;
-    }
-    button{
-        font-size: 25px;
     }
 }
