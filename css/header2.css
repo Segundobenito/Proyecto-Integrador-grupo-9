@@ -80,16 +80,23 @@ footer {
     margin-bottom: 10px;
 }
 
+.sociales li {
+    margin-left: 10px;
+}
+
 footer a {
     text-decoration: none;
     font-style: oblique;
     color: yellow;
-   
 }
+
 
 @media (min-width: 500px){
    header ul {
         font-size: 30px;
+    }
+    .nombres {
+       font-size: 25px;
     }
 }
 
