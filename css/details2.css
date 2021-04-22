@@ -35,6 +35,7 @@ main a {
     padding-left: 2%;
     margin: 0;
 }
+
 .titulo_lista{
     margin: 0;
     padding-left: 2%;
@@ -54,11 +55,19 @@ main a {
     padding-left: 2%;
 }
 .nombre_menu{
-    width: 40%;
+    width: 50%;
     padding-left: 4%;
 }
 .reproducciones_menu{
     width: 35%;
+}
+.artista_menu{
+    width: 25%;
+}
+.lista{
+   font-size: 13px;
+    margin: 0;
+    padding-left: 25px; 
 }
 .lista_canciones{
     display: flex;
@@ -76,13 +85,10 @@ main a {
     width: 30%;
     padding-left: 2%;
 }
-ol {
-    font-size: 13px;
-    margin: 0;
-    padding-left: 25px;
-}
-
 /*detail track*/
+button{
+    margin-right: 10px;
+}
 .imagen_secundaria{
     width: 35%;
 }
@@ -128,7 +134,11 @@ ol {
 .agregado_album{
     display: flex;
     align-items: center;
-    padding-left: 3%;
+    margin-left: 3%;
+}
+.agregar{
+    width: 50%;
+    font-size: 13px;
 }
 .mini{
     width: 10%;
@@ -155,12 +165,13 @@ ol {
     .menu_lista{
         font-size: 30px;
     }
-    .posicion_menu_alb{
-    }
     .lista{
         font-size: 25px;
         margin-left: 5%;
         padding-left: 0;
+    }
+    .sector_foto{
+        font-size: 30px;
     }
 
 }
