@@ -263,6 +263,9 @@ main a {
     .titulo{
         font-size: 75px;
     }
+    .lista{
+        font-size: 40px;
+    }
     .lista_canciones{
         font-size: 40px;
     }
