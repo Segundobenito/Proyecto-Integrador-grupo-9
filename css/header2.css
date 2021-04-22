@@ -60,7 +60,8 @@ header a:hover {
 footer {
     display: flex;
     height: auto;
-    color: yellow;
+    color: black;
+    background-color: yellow;
     margin-top: 30px;
     flex-wrap: wrap;
 }
@@ -90,7 +91,11 @@ footer {
 footer a {
     text-decoration: none;
     font-style: oblique;
-    color: yellow;
+    color: black;
+}
+
+footer a:hover {
+    color:dodgerblue;
 }
 
 
