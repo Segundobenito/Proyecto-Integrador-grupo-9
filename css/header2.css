@@ -94,10 +94,7 @@ footer a {
 }
 
 .genres-class a  {
-    font-family:fantasy;
-    font-size: 300%;
+    font-size: 150%;
+    color: yellowgreen
 }
 
-.blues {
-    font-size: 300%;
-}
