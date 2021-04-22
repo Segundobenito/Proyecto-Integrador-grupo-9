@@ -113,6 +113,12 @@ footer a {
     }
     .nombres {
         font-size: 30px;
+        display: flex;
+        width: 40%;
+    }
+
+    .nombres li {
+        margin-left: 10px;
     }
     
     .sociales a {

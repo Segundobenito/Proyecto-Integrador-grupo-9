@@ -95,6 +95,10 @@ article {
         font-size: 25px;
     }
 
+    article {
+        width: 30%;
+    }
+
     h1 {
         font-size: 35px;
     }
@@ -103,4 +107,11 @@ article {
     }
     
    
+}
+
+@media (min-width: 1000px) {
+    article {
+        width: 18%;
+        margin: 1%;
+    }
 }
