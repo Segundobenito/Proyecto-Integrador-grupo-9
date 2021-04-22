@@ -93,5 +93,10 @@ footer a {
    
 }
 
+@media (min-width: 500px){
+   header ul {
+        font-size: 30px;
+    }
+}
 
 

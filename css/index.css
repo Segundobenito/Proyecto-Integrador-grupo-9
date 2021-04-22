@@ -5,12 +5,12 @@
 }
 body {
     font-family: "montserrat", sans-serif;
-    color: yellow;
+    color: yellow(255, 255, 0, 0.411);
     background-color: black;
     min-height: 100vh;
 }
 main a:hover {
-    color: #0088a9;
+    color:teal;
 }
 main a {
     text-decoration: none;
@@ -41,7 +41,7 @@ article {
     flex-flow: row wrap;
     align-items: center;
     width: 40%;
-    padding-top: 10px;
+    margin: 5%;
 }
 .nombre_artista {
     margin: auto;
@@ -59,3 +59,18 @@ article {
 
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/
+
+@media (min-width: 500px){
+    .nombre_artista {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    
+   
+}
