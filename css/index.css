@@ -55,5 +55,7 @@ article {
 .imagen img{
     width: 100%;
 }
+
+
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/
