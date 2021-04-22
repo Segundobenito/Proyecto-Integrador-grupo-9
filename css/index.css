@@ -116,4 +116,13 @@ article {
         width: 18%;
         margin: 1%;
     }
+    .nombre_resultado a{
+        font-size: 100px;
+    }
+    .resultado p{
+        font-size: 45px;
+    }
+    .busqueda h3{
+        font-size: 35px
+    }
 }
