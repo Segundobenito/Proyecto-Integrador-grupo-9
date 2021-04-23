@@ -1,73 +1,89 @@
 /*<meta name="viewport" content="width=device-width, initial-scale=1.0">*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: "montserrat", sans-serif;
-    color:  yellow;
+    color: yellow;
     background-color: black;
     min-height: 100vh;
 }
 
 
 main a:hover {
-    color:teal;
+    color: teal;
 }
+
 main a {
     text-decoration: none;
     color: yellow;
 }
-main h1{
+
+main h1 {
     width: 100%;
     text-align: center;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 5px;
 }
-main h2{
+
+main h2 {
     width: 100%;
     text-align: center;
     margin: auto;
     padding-bottom: 5px;
-    padding-top:60px;
+    padding-top: 60px;
 }
-section{
+
+section {
     display: flex;
     flex-flow: row wrap;
     margin: auto;
     justify-content: center;
 }
-.resultado{
+
+.resultado {
     justify-content: flex-start;
     align-items: center;
-    background-color:  #55554d;
+    background-color: #55554d;
     border-radius: 15%;
 }
-.resultado div{
+
+.resultado div {
     width: 67%;
 }
-.busqueda{
+
+.busqueda {
     justify-content: flex-start;
 }
-.resultado div p,h3{
+
+.resultado div p,
+h3 {
     margin: 0;
 }
-.categoria{
+
+.categoria {
     text-align: right;
     padding-right: 20px;
 }
-.resultados_parecidos{
+
+.resultados_parecidos {
     width: 30%;
 }
-.resultados_parecidos h3{
+
+.resultados_parecidos h3 {
     font-size: 15px;
 }
-.coment{
+
+.coment {
     text-align: left;
     margin-top: 30px;
     padding: 0;
 }
+
 article {
     display: flex;
     flex-flow: row wrap;
@@ -75,16 +91,19 @@ article {
     width: 40%;
     margin: 1.5%;
 }
+
 .nombre_artista {
     margin: auto;
     font-size: 15px;
     text-align: center;
 }
-.imagen{
+
+.imagen {
     width: 100%;
     border-radius: 100%;
 }
-.imagen img{
+
+.imagen img {
     width: 100%;
 }
 
@@ -92,7 +111,7 @@ article {
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/
 
-@media (min-width: 500px){
+@media (min-width: 500px) {
     .nombre_artista {
         font-size: 25px;
     }
@@ -104,11 +123,12 @@ article {
     h1 {
         font-size: 35px;
     }
+
     h2 {
         font-size: 35px;
     }
-    
-   
+
+
 }
 
 @media (min-width: 1000px) {
@@ -116,13 +136,16 @@ article {
         width: 18%;
         margin: 1%;
     }
-    .nombre_resultado a{
+
+    .nombre_resultado a {
         font-size: 100px;
     }
-    .resultado p{
+
+    .resultado p {
         font-size: 45px;
     }
-    .busqueda h3{
+
+    .busqueda h3 {
         font-size: 35px
     }
 }
