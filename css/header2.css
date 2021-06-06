@@ -64,6 +64,7 @@ footer {
     background-color: yellow;
     margin-top: 30px;
     flex-wrap: wrap;
+    font-weight: bold;
 }
 
 .nombres {
@@ -72,6 +73,7 @@ footer {
     padding-left: 3%;
     width: 50%;
     margin-top: 10px;
+    font-weight:bold;
 
 }
 
