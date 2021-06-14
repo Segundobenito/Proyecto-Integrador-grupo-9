@@ -1,3 +1,4 @@
+
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
     .then(function (response) {
         return response.json();
