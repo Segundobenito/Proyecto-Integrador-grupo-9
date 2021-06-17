@@ -19,15 +19,20 @@
             <li><a href="playlist.html">Playlist</a></li>
             <li><a href="#footer">Contact</a></li>
         </ul>
-        <form action="search-results.html" method="GET">
-            <p>
-                <input type="search" name="Buscar" placeholder="Artista, Cancion, Album...">
-                <input type="submit" value="Buscar">
-            </p>
+        <li>
+            <form action="resultados.html" method="GET"><input type="text" name="search" placeholder="Buscar...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+        </li>
+        <!-- <p>
+
+             <input type="search" name="Buscar" placeholder="Artista, Cancion, Album...">
+            <input type="submit" value="Buscar"> 
+        </p> -->
         </form>
     </header>
     <main>
-        <h1>Buscaste: "moon"</h1>
+        <h1 class="titulo"></h1>
+        <!-- <h1>Buscaste: "moon"</h1> -->
         <h2 class="coment">Resultado Principal</h2>
         <section class="resultado">
             <article class="resultados_parecidos">
@@ -95,7 +100,7 @@
             <li> <a href="#" class="fa fa-youtube"></a> </li>
         </ul>
     </footer>
-        <script src="/javascipt/search-results.js"></script>
+    <script src="/javascipt/search-results.js"></script>
 </body>
 
 </html>
