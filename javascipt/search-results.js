@@ -4,4 +4,4 @@ let busqueda = querystringobj.get("search");
 
 let titulo = document.querySelector('.titulo')
 
-titulo.innerHTML += 'Resultado de busqueda:"'+busqueda+'"'
+titulo.innerHTML += 'Resultado de busqueda:"+busqueda+"'

@@ -9,14 +9,22 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127")
     .then(function (data) {
         console.log(data);
 
-        let albumTitle = data.artist
+        let albumTitle = data
         let albumLista = data.tracks
+        let albumName = 'Alive'; 
+        let albumDate = '19/11/2007'
 
         let albumes = document.querySelector(".lista");
         let tituloAlbum = document.querySelector('.title');
 
-        tituloAlbum.innerHTML += '<div class="title"><img class="imagen_artista" src="' + albumTitle[i].artist.picture_big + '" alt="' + albumTitle[i].title + '"><p class="categoria">Album</p><h1 class="titulo">The Dark Side of the Moon</h1><article class="agregado_album3"><img class="mini" src="Fotos/pink_floyd.jpg" alt="pink floyd"><p class="nombre_agregado"><a href="' + albumTitle[i].title + '">Pink Floyd</a><p><p class="fecha">01/03/1973</p></div>'
 
-        albumes.innerHTML += '<li><article class="lista_canciones"><p class="nombre_cl_alb"><a href="detail-track.html">Speak to Me</a></p><p class="reproducciones_alb">93.473.120 </p> </article> </li>'
+        tituloAlbum.innerHTML += '<img class="imagen_artista" src="' + albumTitle.artist.picture_big + '" alt="' + albumTitle.artist.name + '"><p class="categoria">Album</p><h1 class="titulo">' + albumTitle.artist.name + '</h1><article class="agregado_album3"><p class="nombre_agregado"><a href="detail-artist.html">' + AlbumName + '</a> <p class="fecha">'+ albumDate +'</p>'
+        
+
+         for (let i = 0; i < 13; i++) {
+           
+             albumes.innerHTML += '<article class="lista_canciones"><p class="nombre_cl_alb"><a href="detail-track.html">'+ albumLista.data[i].title +'</a></p><p class="reproducciones_alb">93.473.120 </p> </article>'
+         }
+
 
     })

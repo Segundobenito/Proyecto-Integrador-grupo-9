@@ -1,11 +1,11 @@
-//https://cors-anywhere.herokuapp.com/corsdemo 
+// //https://cors-anywhere.herokuapp.com/corsdemo 
 
- //fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
- //  .then(function (response) {
-  //     return response.json();
-  // })
-  //  .then(function (data) {
-  //       console.log(data);
+// fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
+//     .then(function (response) {
+//         return response.json();
+//     })
+//     .then(function (data) {
+//         console.log(data);
 //         let songs = data.tracks.data;
 //         let albums = data.albums.data;
 //         let artists = data.artists.data;
@@ -20,7 +20,7 @@
 //         }
 
 //          for (let i = 0; i < 5; i++) {
-//              albumes.innerHTML += '<article><img class="imagen" src="' + albums[i].cover_big + '" alt="' + albums[i].title + '"><h3 class="nombre_artista" id="bob"><a href="detail-albums.html">' + albums[i].title + '</a></h3></article>'
+//              albumes.innerHTML += '<article><img class="imagen" src="' + albums[i].cover_big + '" alt="' + albums[i].title + '"><h3 class="nombre_artista" id="bob"><a href="detail-artist.html">' + albums[i].title + '</a></h3></article>'
 //          }
 
 //         for (let i = 0; i < 5; i++) {
@@ -28,4 +28,4 @@
 
 //         }
 
-//  })
+//     })
