@@ -7,7 +7,7 @@
         let songs = data.tracks.data;
         let albums = data.albums.data;
         let artists = data.artists.data;
-
+        
         let canciones = document.querySelector('.songs');
         let albumes = document.querySelector('.albums');
         let artistas = document.querySelector('.artists');
