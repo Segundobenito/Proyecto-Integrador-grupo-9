@@ -1,7 +1,6 @@
-
-let datos = new URLSearchParams (location.search);
-let cual = datos.get('id')
-console.log(cual)
+// let querystring = location.search;
+// let datos = new URLSearchParams (querystring);
+// let mainAlbums = datos.get('id')
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127")
     .then(function (response) {
@@ -30,6 +29,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127")
 
 
     })
+
     .catch(function (error) {
         console.log(error);
     })

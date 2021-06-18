@@ -7,7 +7,7 @@
         let songs = data.tracks.data;
         let albums = data.albums.data;
         let artists = data.artists.data;
-
+        
         let canciones = document.querySelector('.songs');
         let albumes = document.querySelector('.albums');
         let artistas = document.querySelector('.artists');
@@ -18,7 +18,7 @@
         }
 
         for (let i = 0; i < 5; i++) {
-            albumes.innerHTML += '<article><img class="imagen" src="' + albums[i].cover_big + '" alt="' + albums[i].title + '"><h3 class="nombre_artista" id="bob"><a href="detail-artist.html">' + albums[i].title + '</a></h3></article>'
+            albumes.innerHTML += '<article><img class="imagen" src="' + albums[i].cover_big + '" alt="' + albums[i].title + '"><h3 class="nombre_artista" id="bob"><a href="detail-album.html">' + albums[i].title + '</a></h3></article>'
         }
 
         for (let i = 0; i < 5; i++) {
