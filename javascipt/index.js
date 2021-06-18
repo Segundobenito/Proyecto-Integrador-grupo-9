@@ -1,7 +1,7 @@
 // //https://cors-anywhere.herokuapp.com/corsdemo 
 
 // fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
-//     .then(function (response) {
+//    .then(function (response) {
 //         return response.json();
 //     })
 //     .then(function (data) {

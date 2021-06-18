@@ -181,6 +181,7 @@ main a {
     display: flex;
     align-items: center;
     margin-left: 3%;
+    justify-content: space-around;
 }
 
 .agregado_album2 {
