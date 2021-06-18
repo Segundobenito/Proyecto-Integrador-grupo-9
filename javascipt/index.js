@@ -1,4 +1,4 @@
-https: //cors-anywhere.herokuapp.com/corsdemo 
+//https: //cors-anywhere.herokuapp.com/corsdemo 
 
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
     .then(function (response) {
