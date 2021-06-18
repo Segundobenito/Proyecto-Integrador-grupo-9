@@ -1,4 +1,4 @@
-https://cors-anywhere.herokuapp.com/corsdemo 
+//https://cors-anywhere.herokuapp.com/corsdemo
 
  fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
      .then(function (response) {
@@ -27,5 +27,7 @@ https://cors-anywhere.herokuapp.com/corsdemo
              artistas.innerHTML += '<article><img class="imagen" src="' + artists[i].picture_big + '" alt="' + artists[i].name + '"><h3 class="nombre_artista" id="metalica"><a href="detail-artist.html">' + artists[i].name + '</a></h3></article>'
 
          }
-
-     })
+        })
+    .catch(function(error){
+        console.log(error)
+    })
