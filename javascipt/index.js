@@ -1,11 +1,11 @@
 //https://cors-anywhere.herokuapp.com/corsdemo 
 
-// fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
-//     .then(function (response) {
-//         return response.json();
-//     })
-//     .then(function (data) {
-//         console.log(data);
+ //fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
+ //  .then(function (response) {
+  //     return response.json();
+  // })
+  //  .then(function (data) {
+  //       console.log(data);
 //         let songs = data.tracks.data;
 //         let albums = data.albums.data;
 //         let artists = data.artists.data;
@@ -28,4 +28,4 @@
 
 //         }
 
-//     })
+//  })
