@@ -26,7 +26,10 @@
         for (let i = 0; i < 5; i++) {
             artistas.innerHTML += '<article><img class="imagen" src="' + artists[i].picture_big + '" alt="' + artists[i].name + '"><h3 class="nombre_artista" id="metalica"><a href="detail-artist.html">' + artists[i].name + '</a></h3></article>'
 
-        }
-
+         }
+        })
+    .catch(function(error){
+        console.log(error)
     })
+
    
