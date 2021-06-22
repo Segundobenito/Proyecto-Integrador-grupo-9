@@ -68,7 +68,20 @@ section {
     justify-content: flex-start;
 }
 
-.busqueda {
+/* .busqueda {
+    justify-content: flex-start;
+} */
+
+.busquedaCanciones {
+    justify-content: flex-start;
+    
+}
+
+.busquedaAlbums {
+    justify-content: flex-start;
+}
+
+.busquedaCanciones {
     justify-content: flex-start;
 }
 
