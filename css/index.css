@@ -56,6 +56,18 @@ section {
     width: 67%;
 }
 
+.canciones {
+    justify-content: flex-start;
+}
+
+.albums {
+    justify-content: flex-start;
+}
+
+.artistas {
+    justify-content: flex-start;
+}
+
 .busqueda {
     justify-content: flex-start;
 }

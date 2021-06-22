@@ -7,18 +7,20 @@ let titulo = document.querySelector('.resultado')
 titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
 
 
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q="+busqueda)
+
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q="+ busqueda + '&&limit=3')
 .then(function (response) {
     return response.json();
 })
 .then(function (data) {
-    console.log(data);
-    let albums = data;
-    let resultadoAlbum = document.querySelector(".busqueda");
-   
+    let albums = data.data;
+    let resultadoAlbum = document.querySelector(".busquedaAlbums");
+    console.log(albums);
 
-    for (let i = 0; i < albums.length; i++) {
-        resultadoAlbum += `<article class="resultados_parecidos"><img class="imagen" src="${albums[i].cover_big}" alt="${albums[i].title}"><h3 class="nombre_artista" id="exodus"><a href="detail-album.html"${albums[i].title}</a></h3></article>`
+    for (let i = 0; i < 3; i++) {
+        resultadoAlbum.innerHTML += ` <article class = "resultados_parecidos"> 
+        <img class="imagen" src="${albums[i].cover_big}" alt="${albums[i].title}">
+        <h3 class="nombre_artista" id="exodus"><a href="detail-album.html">${albums[i].title}</a></h3></article>`
     
     }
 
