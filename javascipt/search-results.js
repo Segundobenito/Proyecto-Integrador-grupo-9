@@ -1,3 +1,5 @@
+{/* <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/${data.id}" width="1000" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe> */}
+
 let queryString = location.search
 let queryStringObject = new URLSearchParams(queryString);
 let busqueda = queryStringObject.get("search");

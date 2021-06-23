@@ -39,7 +39,7 @@ console.log('id: ' + codigo);
         <article class="lista_canciones">
             <img class="imagen_all" src="${imagen}" alt="${nombre}">
             <p class="nombre_cl"><a href="detail-track.html">${nomCancion}</a></p>
-            <p class="reproducciones">${rank} </p>
+            <p class="reproducciones">${rank} </p> 
         </article>
         </li> 
         `

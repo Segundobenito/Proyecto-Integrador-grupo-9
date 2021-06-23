@@ -68,6 +68,12 @@ section {
     justify-content: flex-start;
 }
 
+.nombre_cancion {
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+}
+
 /* .busqueda {
     justify-content: flex-start;
 } */
