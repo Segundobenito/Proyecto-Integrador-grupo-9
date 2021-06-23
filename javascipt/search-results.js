@@ -1,12 +1,23 @@
-{/* <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/${data.id}" width="1000" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe> */}
+{
+    /* <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/${data.id}" width="1000" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe> */
+}
 
 let queryString = location.search
 let queryStringObject = new URLSearchParams(queryString);
 let busqueda = queryStringObject.get("search");
-
 let titulo = document.querySelector('.resultado')
-
 titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
+
+
+// if (busqueda.value == "") {
+//     busqueda = titulo.innerHTML += `No`
+// } else if (busqueda.value == false) {
+//     busqueda = titulo.innerHTML += `No hay `
+// } else {
+//     busqueda = titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
+// }
+
+
 
 
 
@@ -50,14 +61,14 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
         let artists = data.data
         let artistas = document.querySelector(".busquedaArtistas")
         console.log(artists);
-        
-        
+
+
         for (let i = 0; i < 3; i++) {
-        artistas.innerHTML += `
+            artistas.innerHTML += `
         <article class="resultados_parecidos"><img class="imagen" src="${artists[i].picture_big}" alt="${artists[i].name}"><h3 class="nombre_artista" id="bob"><a href="detail-artist.html">${artists[i].name}</a></h3></article>
         `
-            
+
         }
-        
-       
+
+
     })
