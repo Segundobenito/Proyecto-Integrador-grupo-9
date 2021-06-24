@@ -6,18 +6,16 @@ let queryString = location.search
 let queryStringObject = new URLSearchParams(queryString);
 let busqueda = queryStringObject.get("search");
 let titulo = document.querySelector('.resultado')
-titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
+//titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
+console.log(busqueda);
 
-
-// if (busqueda.value == "") {
-//     busqueda = titulo.innerHTML += `No`
-// } else if (busqueda.value == false) {
-//     busqueda = titulo.innerHTML += `No hay `
-// } else {
-//     busqueda = titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
-// }
-
-
+//  if (busqueda.value === "") {
+//     titulo.innerHTML = `No has puesto nada`
+//  } else if (busqueda.value === false) {
+//     titulo.innerHTML = `No hay `
+//  } else {
+//     titulo.innerHTML = `Resultado de busqueda:"${busqueda}"`
+//  }
 
 
 
