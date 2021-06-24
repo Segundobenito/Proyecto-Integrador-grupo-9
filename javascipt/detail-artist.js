@@ -11,9 +11,9 @@ console.log (url)
     console.log(data);
     let nombre = data.name
     let imagen = data.picture_big
-    let canciones = data.traklist.data
+    let canciones = data.tracklist
     let ubic = document.querySelector('main')
-
+    console.log(canciones)
     ubic.innerHTML +=`
     <img class="imagen_artista" src="${imagen}" alt="${nombre}">
     <p class="categoria">Artista</p>
@@ -28,22 +28,31 @@ console.log (url)
     <ol class="lista">
     <ol/>
     `
-    let ubicLista = document.querySelector('ol')
+    fetch(`https://cors-anywhere.herokuapp.com/${canciones}`)
+    .then(function(respuesta){
+        return respuesta.json();
+     })
+    .then(function (data) {
 
-    for (let i = 0; i < 5; i++) {
-        let nomCancion = canciones[i].title
-        let rank = canciones[i].rank
+        let ubicLista = document.querySelector('ol')
 
-        ubicLista.innerHTML +=`
-        <li>
-        <article class="lista_canciones">
+        for (let i = 0; i < 5; i++) {
+            let nomCancion = data.data[i].title
+            let rank = data.data[i].rank
+            ubicLista.innerHTML +=`
+            <li>
+            <article class="lista_canciones">
             <img class="imagen_all" src="${imagen}" alt="${nombre}">
             <p class="nombre_cl"><a href="detail-track.html">${nomCancion}</a></p>
             <p class="reproducciones">${rank} </p>
-        </article>
-        </li> 
-        `
-    }
+            </article>
+            </li> 
+            `
+        }
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
 
  })
  .catch(function (error) {
