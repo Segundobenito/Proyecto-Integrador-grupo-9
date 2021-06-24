@@ -29,7 +29,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${codigo
         <article>
             <img class="imagen" src="${fotoArtista}" alt="${nombreArtista}">
             <h3 class="nombre_artista">
-                <a href="detail-generes.html?id=${idArtista}">${nombreArtista}</a>
+                <a href="detail-artist.html?id=${idArtista}">${nombreArtista}</a>
             </h3>
         </article>`
     }

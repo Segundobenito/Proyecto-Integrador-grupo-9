@@ -17,8 +17,8 @@ console.log (url)
     <p class="categoria">Artista</p>
     <h1 class="titulo">${nombre}</h1>
     <h3 class="titulo_lista">Albumes :</h3>
-    <ol class="lista">
-    <ol/>
+    <section class="genres">
+    </section>
     `
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${codigo}/albums`)
     .then(function(respuesta){
@@ -26,19 +26,19 @@ console.log (url)
      })
     .then(function (data) {
         let album = data.data
-        let ubicLista = document.querySelector('ol')
+        let ubicLista = document.querySelector('section')
 
         for (let i = 0; i < 5; i++) {
             let fotoAlbm = album[i].cover_medium
             let nombreAlbm = album[i].title
             let idAlbm = album[i].id
             ubicLista.innerHTML +=`
-            <li>
             <article class="lista_canciones">
-                <img class="imagen_all" src="${fotoAlbm}" alt="${nombreAlbm}">
-                <p class="nombre_cl"><a href="detail-track.html?id=${idAlbm}">${nombreAlbm}</a></p>
+            <img class="imagen" src="${fotoAlbm}" alt="${nombreAlbm}">
+            <h3 class="nombre_artista">
+                <a href="detail-album.html?id=${idAlbm}">${nombreAlbm}</a>
+            </h3>
             </article>
-            </li> 
             `
         }
     })
