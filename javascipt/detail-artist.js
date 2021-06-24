@@ -23,7 +23,7 @@ console.log (url)
         <p class="posicion_menu">#</p>
         <p class="imagen_menu">Album</p>
         <p class="nombre_menu">Nombre</p>
-        <p class="reproducciones_menu">Reproducciones </p>
+        <p class="reproducciones_menu">Duracion </p>
     </article>
     <ol class="lista">
     <ol/>
@@ -38,13 +38,17 @@ console.log (url)
 
         for (let i = 0; i < 5; i++) {
             let nomCancion = data.data[i].title
-            let rank = data.data[i].rank
+            let duracion = data.data[i].duration
+            let fotoAlbm = data.data[i].album.cover_medium
+            let nombreAlbm = data.data[i].album.title
+            let idcancion = data.data[i].id
             ubicLista.innerHTML +=`
             <li>
             <article class="lista_canciones">
-            <img class="imagen_all" src="${imagen}" alt="${nombre}">
-            <p class="nombre_cl"><a href="detail-track.html">${nomCancion}</a></p>
-            <p class="reproducciones">${rank} </p>
+            <p>${i+1}</p>
+            <img class="imagen_all" src="${fotoAlbm}" alt="${nombreAlbm}">
+            <p class="nombre_cl"><a href="detail-track.html?id=${idcancion}">${nomCancion}</a></p>
+            <p class="reproducciones">${duracion}sec </p>
             </article>
             </li> 
             `

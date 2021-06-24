@@ -3,48 +3,39 @@ let search_results = new URLSearchParams(this.location.search);
 let codigo = search_results.get('id');
 console.log('id: ' + codigo);
 
- fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/' + {codigo})
+ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${codigo}`)
  .then(function(respuesta) {
     return respuesta.json();
  })
  .then(function (data) {
     console.log(data);
-    let nombre = data.name
-    let imagen = data.picture_big
-    let canciones = data.traklist.data
+    let nombre = data.title
+    let nombreArtist = data.artist.name
+    let artistaId = data.artist.id
+    let fotoArtista = data.artist.picture
     let ubic = document.querySelector('main')
+    let nombreAlbm = data.album.title
+    let albmId = data.album.id
+    let fotoAlbm = data.album.cover_xl
 
     ubic.innerHTML +=`
-    <img class="imagen_artista" src="${imagen}" alt="${nombre}">
-    <p class="categoria">Artista</p>
-    <h1 class="titulo">${nombre}</h1>
-    <h3 class="titulo_lista">Top 5 Canciones :</h3>
-    <article class="menu_lista">
-        <p class="posicion_menu">#</p>
-        <p class="imagen_menu">Album</p>
-        <p class="nombre_menu">Nombre</p>
-        <p class="reproducciones_menu">Reproducciones </p>
-    </article>
-    <ol class="lista">
-    <ol/>
-    `
-    let ubicLista = document.querySelector('ol')
-
-    for (let i = 0; i < 5; i++) {
-        let nomCancion = canciones[i].title
-        let rank = canciones[i].rank
-
-        ubicLista.innerHTML +=`
-        <li>
-        <article class="lista_canciones">
-            <img class="imagen_all" src="${imagen}" alt="${nombre}">
-            <p class="nombre_cl"><a href="detail-track.html">${nomCancion}</a></p>
-            <p class="reproducciones">${rank} </p> 
+        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${codigo}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        <p class="categoria">Cancion</p>
+        <article class="titulo_track">
+            <h1 class="titulo">${nombre}</h1>
         </article>
-        </li> 
-        `
-    }
-
+        <section class="section_cancion">
+            <article class="agregado_album">
+                <p class="nombre_agregado"><a href="detail-album.html?id=${albmId}">${nombreAlbm}</a></p>
+                <img class="mini" src="${fotoArtista}" alt="Exodus">
+                <p class="fecha"><a href="detail-artist.html?id=${artistaId}">${nombreArtist}</a></p>
+            </article>
+            <article class="agregado_album2">
+                <p class="agregar">Agregar a Mi Playlist</p>
+                <p><a href="playlist.html">Ver Mi Playlist</a></p>
+            </article>
+        </section>
+    `
  })
  .catch(function (error) {
     console.log(error);
