@@ -1,32 +1,52 @@
-// let querystring = location.search;
-// let datos = new URLSearchParams (querystring);
-// let mainAlbums = datos.get('id')
+let search_results = new URLSearchParams(this.location.search);
+let codigo = search_results.get('id');
+console.log('id: ' + codigo);
 
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127")
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${codigo}`)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         console.log(data);
 
-        let albumTitle = data;
-        let albumLista = data.tracks;
-        let albumName = 'Alive';
-        let albumDate = '19/11/2007'
-        let albumes = document.querySelector(".lista");
-        let tituloAlbum = document.querySelector('.title');
+        let albumFoto = data.cover_xl;
+        let albumLista = data.tracks.data;
+        let albumName = data.title;
+        let albumDate = data.release_date
+        let artista = data.artist.name
+        let artistaFoto = data.artist.picture_medium
+        let artistaId = data.artist.id
+        let ubicLista = document.querySelector('.lista');
+        let ubic = document.querySelector('.title');
 
 
+        ubic.innerHTML +=`
+        <img class="imagen_artista" src="${albumFoto}" alt="${albumName}">
+        <p class="categoria">Album</p>
+        <h1 class="titulo">${albumName}</h1>
+        <article class="agregado_album3">
+            <img class="mini" src="${artistaFoto}" alt="${artista}">
+            <p class="nombre_agregado"><a href="detail-artist.html?id=${artistaId}">${artista}</a><p>
+            <p class="fecha">Publicado el ${albumDate}</p>
+        </article>
+        `
+         
 
-             tituloAlbum.innerHTML += '<img class="imagen_artista" src="' + albumTitle.artist.picture_medium + '" alt="' + albumTitle.artist.name + '"><p class="categoria">Album</p><h1 class="titulo">' + albumTitle.artist.name + '</h1><article class="agregado_album3"><p class="nombre_agregado"><a href="detail-artist.html">' + albumName + '</a> <p class="fecha">' + albumDate + '</p><a href="generes.html">' + albumTitle.genres.data[0].name + '</a>'
-
-
-
-         for (let i = 0; i < 13; i++) {
-
-            albumes.innerHTML += '<li><article class="lista_canciones"><p class="nombre_cl_alb"><a href="detail-track.html">' + albumLista.data[i].title + '</a></p><p class="reproducciones_alb">93.473.120 </p> </article></li>'
-         }
-
+        
+        for(let i = 0; i < albumLista.length; i++) {
+            let cancion = albumLista[i]
+            let nombreCancion = cancion.title
+            let idCancion = cancion.id
+            let duracion = cancion.duration
+            console.log(albumLista.length)
+            ubicLista.innerHTML +=`
+            <li>
+                <article class="lista_canciones">
+                    <p class="nombre_cl_alb"><a href="detail-track.html?id=${idCancion}">${nombreCancion}</a></p>
+                    <p class="reproducciones_alb">${duracion} sec</p>
+                </article>
+            </li>`
+        }
 
     })
 

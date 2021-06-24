@@ -46,7 +46,7 @@ console.log (url)
             <li>
             <article class="lista_canciones">
             <p>${i+1}</p>
-            <img class="imagen_all" src="${fotoAlbm}" alt="${nombreAlbm}">
+            <a href="detail-track.html?id=${idcancion}><img class="imagen_all" src="${fotoAlbm}" alt="${nombreAlbm}"></a>
             <p class="nombre_cl"><a href="detail-track.html?id=${idcancion}">${nomCancion}</a></p>
             <p class="reproducciones">${duracion}sec </p>
             </article>

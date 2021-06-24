@@ -30,7 +30,7 @@
                 <article>
                     <img class="imagen" src="${albums[i].cover_big}" alt="${albums[i].title}">
                     <h3 class="nombre_artista">
-                        <a href="detail-artist.html?id=${albums[i].id}">${albums[i].title}</a>
+                        <a href="detail-album.html?id=${albums[i].id}">${albums[i].title}</a>
                     </h3>
                 </article>`
         }

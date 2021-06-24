@@ -27,7 +27,7 @@ console.log('id: ' + codigo);
         <section class="section_cancion">
             <article class="agregado_album">
                 <p class="nombre_agregado"><a href="detail-album.html?id=${albmId}">${nombreAlbm}</a></p>
-                <img class="mini" src="${fotoArtista}" alt="Exodus">
+                <img class="mini" src="${fotoArtista}" alt="${nombreArtist}">
                 <p class="fecha"><a href="detail-artist.html?id=${artistaId}">${nombreArtist}</a></p>
             </article>
             <article class="agregado_album2">
