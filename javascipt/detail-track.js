@@ -26,6 +26,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${codigo
         </article>
         <section class="section_cancion">
             <article class="agregado_album">
+                <img class="mini" src="${fotoAlbm}" alt="${nombreAlbm}">
                 <p class="nombre_agregado"><a href="detail-album.html?id=${albmId}">${nombreAlbm}</a></p>
                 <img class="mini" src="${fotoArtista}" alt="${nombreArtist}">
                 <p class="fecha"><a href="detail-artist.html?id=${artistaId}">${nombreArtist}</a></p>
