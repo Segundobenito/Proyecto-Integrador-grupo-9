@@ -18,9 +18,9 @@
                 <article>
                     <img class="imagen" src="${songs[i].album.cover_big}" alt="${songs[i].title}">
                     <h3class="nombre_cancion">
-                        <a href="detail-track.html?id=${songs[i].id}">${songs[i].title}</a>
+                        <a href="detail-track.html?id=${songs[i].id}">${songs[i].title}, </a><a href="detail-artist.html?id=${songs[i].artist.id}">${songs[i].artist.name}</a>
                     </h3>
-                    <h3><a href="detail-artist.html?id=${albums[i].id}">${albums[i].title}</a>
+                    <h3>
                     </h3>
                 </article>`
         }
