@@ -9,13 +9,15 @@ let titulo = document.querySelector('.resultado')
 //titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
 console.log(busqueda);
 
-//  if (busqueda.value === "") {
-//     titulo.innerHTML = `No has puesto nada`
-//  } else if (busqueda.value === false) {
-//     titulo.innerHTML = `No hay `
-//  } else {
-//     titulo.innerHTML = `Resultado de busqueda:"${busqueda}"`
-//  }
+
+  if (titulo.value === true) {
+     titulo.innerHTML = `Resultado de busqueda:"${busqueda}"`;
+  } else if (titulo.value === false) {
+     titulo.innerHTML = `No hay coincidencias`;
+  } else {
+    titulo.innerHTML = `Resultado de busqueda:"${busqueda}"`;
+
+  }
 
 
 
