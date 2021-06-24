@@ -8,23 +8,28 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${codigo
  })
  .then(function (data) {
     console.log(data);
-    let nombreGenero = data.data[i].name
-    
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${codigo}/artist`)
+    let nombreGenero = data.name
+    ubicTitulo = document.querySelector('.titulo')
+    ubicTitulo.innerText = nombreGenero
+
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${codigo}/artists`)
     .then(function(respuesta) {
        return respuesta.json();
     })
     .then(function (data) {
        console.log(data);
-    for (let i = 1; i < genero.length; i++) {
-        let fotoArtista = genero[i].picture_big
-        let nombreArtista = genero[i].name
-        let idArtista = genero[i].id
-        generes.innerHTML += `
+       let listaArtistas = data.data
+       console.log(listaArtistas)
+    for (let i = 1; i < listaArtistas.length; i++) {
+        let fotoArtista = listaArtistas[i].picture_big
+        let nombreArtista = listaArtistas[i].name
+        let idArtista = listaArtistas[i].id
+        let ubicLista = document.querySelector('.genres')
+        ubicLista.innerHTML += `
         <article>
-            <img class="imagen" src="${fotoGenero}" alt="${nombreGenero}">
+            <img class="imagen" src="${fotoArtista}" alt="${nombreArtista}">
             <h3 class="nombre_artista">
-                <a href="detail-generes.html?id=${idGenero}">${nombreGenero}</a>
+                <a href="detail-generes.html?id=${idArtista}">${nombreArtista}</a>
             </h3>
         </article>`
     }
