@@ -59,12 +59,14 @@ section {
 .nombre_cancion {
     margin: auto;
     text-align: center;
-    width: 100%
+    width: 100%;
+    font-size: 15px;
 }
 .nombre_cancion2 {
     margin: auto;
     text-align: center;
-    width: 100%
+    width: 100%;
+    font-size: 15px;
 }
 /* .busqueda {
     justify-content: flex-start;
@@ -136,7 +138,12 @@ article {
     .nombre_artista {
         font-size: 25px;
     }
-
+    .nombre_cancion2 {
+        font-size: 18px;
+    }
+    .nombre_cancion {
+        font-size: 25px;
+    }
     article {
         width: 30%;
     }
