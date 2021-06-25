@@ -8,8 +8,17 @@ let busqueda = queryStringObject.get("search");
 let titulo = document.querySelector('.resultado')
 titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
 console.log(busqueda);
-
-
+let formulario = document.querySelector("form");
+let coso = document.getElementById("fomu");
+formulario.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(fomu.value === ''){
+       alert('EL CAMPO NO PUEDE ESTAR VACIO')
+     } else{
+        formulario.submit();
+    }
+    })
+    
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=" + busqueda + '&&limit=3')
     .then(function (response) {
         return response.json();
@@ -18,14 +27,15 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
         let songs = data.data;
         let canciones = document.querySelector(".busquedaCanciones");
         let main = document.querySelector("main");
-        main.style.height = '80vh'
         
+
         console.log(songs);
 
           if(songs.length == 0) {
               main.innerHTML = '<h1>No hay coincidencias</h1>'
-
+              main.style.height = '80vh'
           } 
+          
 
                 
             
