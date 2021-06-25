@@ -10,17 +10,17 @@ titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
 console.log(busqueda);
 let formulario = document.querySelector("form");
 let coso = document.getElementById("fomu");
-formulario.addEventListener('submit', function(e){
+formulario.addEventListener('submit', function (e) {
     e.preventDefault();
-    if(fomu.value === '') {
+    if (fomu.value === '') {
         alert('El campo no puede estar vacio');
-      } else if(fomu.value <= 3){
-         alert('Mas que 3 please');
-      }else{
-         formulario.submit();
-     }
-     })
-    
+    } else if (fomu.value <= 3) {
+        alert('Mas que 3 please');
+    } else {
+        formulario.submit();
+    }
+})
+
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=" + busqueda + '&&limit=3')
     .then(function (response) {
         return response.json();
@@ -29,27 +29,27 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
         let songs = data.data;
         let canciones = document.querySelector(".busquedaCanciones");
         let main = document.querySelector("main");
-        
+
 
         console.log(songs);
 
-          if(songs.length == 0) {
-              main.innerHTML = '<h1>No hay coincidencias</h1>'
-              main.style.height = '80vh'
-          } 
-          
+        if (songs.length == 0) {
+            main.innerHTML = '<h1>No hay coincidencias</h1>'
+            main.style.height = '80vh'
+        }
 
-                
-            
-            for (let i = 0; i < 3; i++) {
-                canciones.innerHTML += `<article class="resultados_parecidos">
+
+
+
+        for (let i = 0; i < 3; i++) {
+            canciones.innerHTML += `<article class="resultados_parecidos">
                 <img class="imagen" src="${songs[i].album.cover_big}" alt="${songs[i].title}"><h3 class="nombre_artista"><a href="detail-track.html?id=${songs[i].id}">${songs[i].title}</a></h3></article>`
 
 
-            
-            }
-        })
-        
+
+        }
+    })
+
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=" + busqueda + '&&limit=3')
     .then(function (response) {
@@ -84,6 +84,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
         `
 
         }
-        
+
 
     })
