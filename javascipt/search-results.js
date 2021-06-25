@@ -6,19 +6,8 @@ let queryString = location.search
 let queryStringObject = new URLSearchParams(queryString);
 let busqueda = queryStringObject.get("search");
 let titulo = document.querySelector('.resultado')
-//titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
+titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
 console.log(busqueda);
-
-
-  if (titulo.value === true) {
-     titulo.innerHTML = `Resultado de busqueda:"${busqueda}"`;
-  } else if (titulo.value === false) {
-     titulo.innerHTML = `No hay coincidencias`;
-  } else {
-    titulo.innerHTML = `Resultado de busqueda:"${busqueda}"`;
-
-  }
-
 
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=" + busqueda + '&&limit=3')
@@ -28,13 +17,27 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
     .then(function (data) {
         let songs = data.data;
         let canciones = document.querySelector(".busquedaCanciones");
+        let main = document.querySelector("main");
+        main.style.height = '80vh'
+        
         console.log(songs);
 
-        for (let i = 0; i < 3; i++) {
-            canciones.innerHTML += `<article class="resultados_parecidos">
-            <img class="imagen" src="${songs[i].album.cover_big}" alt="${songs[i].title}"><h3 class="nombre_artista"><a href="detail-track.html">${songs[i].title}</a></h3></article>`
-        }
-    })
+          if(songs.length == 0) {
+              main.innerHTML = '<h1>No hay coincidencias</h1>'
+
+          } 
+
+                
+            
+            for (let i = 0; i < 3; i++) {
+                canciones.innerHTML += `<article class="resultados_parecidos">
+                <img class="imagen" src="${songs[i].album.cover_big}" alt="${songs[i].title}"><h3 class="nombre_artista"><a href="detail-track.html">${songs[i].title}</a></h3></article>`
+
+
+            
+            }
+        })
+        
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q=" + busqueda + '&&limit=3')
     .then(function (response) {
@@ -69,6 +72,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
         `
 
         }
-
+        
 
     })
