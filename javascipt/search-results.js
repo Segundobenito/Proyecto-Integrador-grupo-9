@@ -5,13 +5,12 @@ let queryString = location.search
 let queryStringObject = new URLSearchParams(queryString);
 let busqueda = queryStringObject.get("search");
 let titulo = document.querySelector('.resultado')
-titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
-
 
 console.log(busqueda);
 let formulario = document.querySelector("form");
 let coso = document.getElementById("fomu");
 
+titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
 formulario.addEventListener('submit', function (e) {
     e.preventDefault();
     if (fomu.value === '') {
