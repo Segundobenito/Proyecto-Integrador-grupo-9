@@ -43,7 +43,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
             
             for (let i = 0; i < 3; i++) {
                 canciones.innerHTML += `<article class="resultados_parecidos">
-                <img class="imagen" src="${songs[i].album.cover_big}" alt="${songs[i].title}"><h3 class="nombre_artista"><a href="detail-track.html">${songs[i].title}</a></h3></article>`
+                <img class="imagen" src="${songs[i].album.cover_big}" alt="${songs[i].title}"><h3 class="nombre_artista"><a href="detail-track.html?id=${songs[i].id}">${songs[i].title}</a></h3></article>`
 
 
             
