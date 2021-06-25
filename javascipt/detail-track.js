@@ -2,6 +2,19 @@ let search_results = new URLSearchParams(this.location.search);
 let codigo = search_results.get('id');
 console.log('id: ' + codigo);
 
+let formulario = document.querySelector("form");
+let coso = document.getElementById("fomu");
+formulario.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (fomu.value === '') {
+        alert('EL CAMPO NO PUEDE ESTAR VACIO')
+    } else if (fomu.value <= 3) {
+        alert('Mas que 3 please');
+    } else {
+        formulario.submit();
+    }
+})
+
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${codigo}`)
     .then(function (respuesta) {
         return respuesta.json();
