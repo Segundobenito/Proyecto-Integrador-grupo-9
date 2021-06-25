@@ -7,7 +7,7 @@ let titulo = document.querySelector('.resultado')
 formulario.addEventListener('submit', function (e) {
     e.preventDefault();
     if (fomu.value === '') {
-        alert('El campo no puede estar vacio')
+        alert('El campo no puede estar vacio');
     } else if (fomu.value.length < 3) {
         alert('Ponga mas que 3 caracteres por favor');
     } else {
