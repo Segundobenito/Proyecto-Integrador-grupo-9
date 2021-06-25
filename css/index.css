@@ -56,24 +56,16 @@ section {
     width: 67%;
 }
 
-.canciones {
-    justify-content: flex-start;
-}
-
-.albums {
-    justify-content: flex-start;
-}
-
-.artistas {
-    justify-content: flex-start;
-}
-
 .nombre_cancion {
     margin: auto;
-    font-size: 15px;
     text-align: center;
+    width: 100%
 }
-
+.nombre_cancion2 {
+    margin: auto;
+    text-align: center;
+    width: 100%
+}
 /* .busqueda {
     justify-content: flex-start;
 } */
@@ -97,7 +89,6 @@ h3 {
 }
 
 .categoria {
-    text-align: right;
     padding-right: 20px;
 }
 
@@ -137,7 +128,6 @@ article {
 .imagen img {
     width: 100%;
 }
-
 
 /* Para que se modifique en pantalla de Desktop*/
 /*@media (min-width: 1024px)*/
