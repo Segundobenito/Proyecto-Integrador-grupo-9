@@ -63,7 +63,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q
         for (let i = 0; i < albums.length; i++) {
             resultadoAlbum.innerHTML += ` <article class = "resultados_parecidos"> 
         <img class="imagen" src="${albums[i].cover_big}" alt="${albums[i].title}">
-        <h3 class="nombre_artista" id="exodus"><a href="detail-album.html">${albums[i].title}</a></h3></article>`;
+        <h3 class="nombre_artista" id="exodus"><a href="detail-album.html?id=${albums[i].id}">${albums[i].title}</a></h3></article>`;
 
         }
     })
@@ -80,7 +80,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?
 
         for (let i = 0; i < 3; i++) {
             artistas.innerHTML += `
-        <article class="resultados_parecidos"><img class="imagen" src="${artists[i].picture_big}" alt="${artists[i].name}"><h3 class="nombre_artista" id="bob"><a href="detail-artist.html">${artists[i].name}</a></h3></article>
+        <article class="resultados_parecidos"><img class="imagen" src="${artists[i].picture_big}" alt="${artists[i].name}"><h3 class="nombre_artista" id="bob"><a href="detail-artist.html?id=${artists[i].id}">${artists[i].name}</a></h3></article>
         `
 
         }
