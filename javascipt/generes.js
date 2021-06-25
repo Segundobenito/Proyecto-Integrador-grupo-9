@@ -1,21 +1,21 @@
 let formulario = document.querySelector("form");
 let coso = document.getElementById("fomu");
-formulario.addEventListener('submit', function(e){
+formulario.addEventListener('submit', function (e) {
     e.preventDefault();
-    if(fomu.value === ''){
+    if (fomu.value === '') {
         alert('EL CAMPO NO PUEDE ESTAR VACIO')
-      } else if(fomu.value <= 3){
-         alert('Mas que 3 please');
-      } else {
-         formulario.submit();
-     }
-     })
- 
- fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre")
-     .then(function (response) {
+    } else if (fomu.value.length < 3) {
+        alert('Ponga mas que 3 caracteres por favor');
+    } else {
+        formulario.submit();
+    }
+})
+
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre")
+    .then(function (response) {
         return response.json();
-     })
-     .then(function (data) {
+    })
+    .then(function (data) {
         console.log(data);
         let genero = data.data
         let generes = document.querySelector('.genres');
@@ -32,7 +32,7 @@ formulario.addEventListener('submit', function(e){
                 </h3>
             </article>`
         }
-     })
-     .catch(function (error) {
+    })
+    .catch(function (error) {
         console.log(error);
     })

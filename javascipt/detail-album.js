@@ -1,4 +1,3 @@
-
 let search_results = new URLSearchParams(this.location.search);
 let codigo = search_results.get('id');
 console.log('id: ' + codigo);
@@ -21,7 +20,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${codigo
         let ubic = document.querySelector('.title');
 
 
-        ubic.innerHTML +=`
+        ubic.innerHTML += `
         <img class="imagen_artista" src="${albumFoto}" alt="${albumName}">
         <p class="categoria">Album</p>
         <h1 class="titulo">${albumName}</h1>
@@ -31,16 +30,16 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${codigo
             <p class="fecha">Publicado el ${albumDate}</p>
         </article>
         `
-         
 
-        
-        for(let i = 0; i < albumLista.length; i++) {
+
+
+        for (let i = 0; i < albumLista.length; i++) {
             let cancion = albumLista[i]
             let nombreCancion = cancion.title
             let idCancion = cancion.id
             let duracion = cancion.duration
             console.log(albumLista.length)
-            ubicLista.innerHTML +=`
+            ubicLista.innerHTML += `
             <li>
                 <article class="lista_canciones">
                     <p class="nombre_cl_alb"><a href="detail-track.html?id=${idCancion}">${nombreCancion}</a></p>

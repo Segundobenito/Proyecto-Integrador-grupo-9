@@ -1,17 +1,17 @@
 let formulario = document.querySelector("form");
 let coso = document.getElementById("fomu");
-formulario.addEventListener('submit', function(e){
+formulario.addEventListener('submit', function (e) {
     e.preventDefault();
-    if(fomu.value === ''){
-       alert('EL CAMPO NO PUEDE ESTAR VACIO')
-     } else if(fomu.value <= 3){
-        alert('Mas que 3 please');
-     } else {
+    if (fomu.value === '') {
+        alert('EL CAMPO NO PUEDE ESTAR VACIO')
+    } else if (fomu.value.length < 3) {
+        alert('Ponga mas que 3 caracteres por favor');
+    } else {
         formulario.submit();
     }
-    })
-    
-    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
+})
+
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/")
     .then(function (response) {
         return response.json();
     })
@@ -19,15 +19,15 @@ formulario.addEventListener('submit', function(e){
         console.log(data);
         let songs = data.tracks.data;
         let albums = data.albums.data;
-        let artists = data.artists.data; 
-        
+        let artists = data.artists.data;
+
         let canciones = document.querySelector('.songs');
         let albumes = document.querySelector('.albums');
         let artistas = document.querySelector('.artists');
 
 
         for (let i = 0; i < 5; i++) {
-            canciones.innerHTML +=`
+            canciones.innerHTML += `
                 <article>
                     <img class="imagen" src="${songs[i].album.cover_big}" alt="${songs[i].title}">
                     <h3 class="nombre_cancion">
@@ -57,10 +57,8 @@ formulario.addEventListener('submit', function(e){
                     <a href="detail-artist.html?id=${artists[i].id}">${artists[i].name}</a>
                 </h3>
             </article>`
-         }
-        })
-    .catch(function(error){
+        }
+    })
+    .catch(function (error) {
         console.log(error)
     })
-
-   
