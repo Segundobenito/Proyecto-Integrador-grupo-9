@@ -1,21 +1,24 @@
 {
     /* <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/track/${data.id}" width="1000" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe> */
 }
-
 let queryString = location.search
 let queryStringObject = new URLSearchParams(queryString);
 let busqueda = queryStringObject.get("search");
 let titulo = document.querySelector('.resultado')
 titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
+
+
 console.log(busqueda);
 let formulario = document.querySelector("form");
 let coso = document.getElementById("fomu");
+
 formulario.addEventListener('submit', function (e) {
     e.preventDefault();
     if (fomu.value === '') {
-        alert('El campo no puede estar vacio');
+        titulo.innerHTML = `No puede estar vacio el campo`;
     } else if (fomu.value.length < 3) {
-        alert('Ponga mas que 3 caracteres por favor');
+        titulo.innerHTML = `Ponga mas que 3 caracteres`;
+       // alert('Ponga mas que 3 caracteres por favor');
     } else { 
         formulario.submit();
     }

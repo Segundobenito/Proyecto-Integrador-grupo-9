@@ -1,9 +1,13 @@
+
 let formulario = document.querySelector("form");
 let coso = document.getElementById("fomu");
+let titulo = document.querySelector('.resultado')
+//titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
+
 formulario.addEventListener('submit', function (e) {
     e.preventDefault();
     if (fomu.value === '') {
-        alert('EL CAMPO NO PUEDE ESTAR VACIO')
+        alert('El campo no puede estar vacio')
     } else if (fomu.value.length < 3) {
         alert('Ponga mas que 3 caracteres por favor');
     } else {
