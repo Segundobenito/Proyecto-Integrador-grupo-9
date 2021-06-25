@@ -14,9 +14,9 @@ formulario.addEventListener('submit', function (e) {
     e.preventDefault();
     if (fomu.value === '') {
         alert('El campo no puede estar vacio');
-    } else if (fomu.value <= 3) {
-        alert('Mas que 3 please');
-    } else {
+    } else if (fomu.value.length < 3) {
+        alert('Ponga mas que 3 caracteres por favor');
+    } else { 
         formulario.submit();
     }
 })
