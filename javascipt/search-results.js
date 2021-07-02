@@ -9,7 +9,7 @@ let titulo = document.querySelector('.resultado')
 
 console.log(busqueda);
 let formulario = document.querySelector("form");
-let coso = document.getElementById("fomu");
+let fomu = document.getElementById("fomu");
 
 titulo.innerHTML += `Resultado de busqueda:"${busqueda}"`
 
